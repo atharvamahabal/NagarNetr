@@ -241,52 +241,51 @@ export const WARD_DATA = [
   },
   {
     id: 25,
-    name: "Shaniwar Peth - Mahatma Phule Mandai",
+    name: "Wanwadi",
     corporators: [
-      { name: "SWAPNALI PANDIT", party: "BJP", phone: "9100000000" },
-      { name: "RAGHVENDRA MANKAR", party: "BJP", phone: "9100000000" },
-      { name: "SWARDA BAPAT", party: "BJP", phone: "9100000000" },
-      { name: "RAJESH YENPURE", party: "BJP", phone: "9100000000" }
+      { name: "GHOGARE DHANRAJ BABURAO", party: "Corporator", phone: "9850078997" },
+      { name: "KALINDA MURLIDHAR PUND", party: "Corporator", phone: "9850847948" },
+      { name: "JAGTAP RATNAPRABHA SUDAM", party: "Corporator", phone: "9921292929" },
+      { name: "JAGTAP PRASHANT SUDAM", party: "Corporator", phone: "9822651488" }
     ]
   },
   {
     id: 26,
-    name: "Ghorpade Peth - Khadakmaal Aali",
+    name: "Mohammadwadi - Kausar Baug",
     corporators: [
-      { name: "SUJATA SHETTY", party: "BJP", phone: "9100000000" },
-      { name: "AARTI KONDHARE", party: "BJP", phone: "9100000000" },
-      { name: "VIJAYALAXMI HARIHAR", party: "BJP", phone: "9100000000" },
-      { name: "SAMRAT THORAT", party: "BJP", phone: "9100000000" }
+      { name: "ALHAT PRACHI ASHISH", party: "Corporator", phone: "9850709596" },
+      { name: "BHANGIRE PRAMOD ALIAS NANA VASANT", party: "Corporator", phone: "8888882882" },
+      { name: "LONKAR NANDA NARAYAN", party: "Corporator", phone: "9881224422" },
+      { name: "SANJAY (TATYA) GULAB GHULE", party: "Corporator", phone: "9850047872" }
     ]
   },
   {
     id: 27,
-    name: "Navi Peth - Parvati Gaothan",
+    name: "Kondhwa Khurd - Meetha Nagar",
     corporators: [
-      { name: "SHRINIVAS ULAGADDA", party: "BJP", phone: "9100000000" },
-      { name: "RUPALI DHADVE", party: "BJP", phone: "9100000000" },
-      { name: "MAHESH WABLE", party: "BJP", phone: "9100000000" },
-      { name: "PRIYA GADADE", party: "NCP", phone: "9100000000" }
+      { name: "ADV. HAJI GAFUR PATHAN", party: "Corporator", phone: "8928392738" },
+      { name: "PARVEEN HAJI FIROZ", party: "Corporator", phone: "9823048246" },
+      { name: "HAMIDA ANIS SUNDAKE", party: "Corporator", phone: "9049222882" },
+      { name: "BABAR SAINATH SAMBHAJI", party: "Corporator", phone: "9850982198" }
     ]
   },
   {
     id: 28,
-    name: "Janta Vasahat - Dattawadi",
+    name: "Salisbury Park - Maharshi Nagar",
     corporators: [
-      { name: "ANAND RITHE", party: "BJP", phone: "9100000000" },
-      { name: "JYOTI GOSAVI", party: "BJP", phone: "9100000000" },
-      { name: "ANITA KADAM", party: "BJP", phone: "9100000000" },
-      { name: "SHANKAR PAWAR", party: "BJP", phone: "9100000000" }
+      { name: "KAVITA BHARAT VAIRAGE", party: "Corporator", phone: "9890797776" },
+      { name: "SHRINATH YASHWANT BHIMALE", party: "Corporator", phone: "9822291820" },
+      { name: "RAJASHRI AVINASH SHILIMKAR", party: "Corporator", phone: "9422000465" },
+      { name: "PRAVIN MANIKCHAND CHORBOLE", party: "Corporator", phone: "9822018661" }
     ]
   },
   {
     id: 29,
-    name: "Deccan Gymkhana - Shivajinagar",
+    name: "Navi Peth",
     corporators: [
-      { name: "SWATI LOKHANDE", party: "BJP", phone: "9100000000" },
-      { name: "NILIMA KHADE", party: "BJP", phone: "9100000000" },
-      { name: "JYOTSNA EKBOTE", party: "BJP", phone: "9100000000" },
-      { name: "SIDDHARTH SHIROLE", party: "BJP", phone: "9100000000" }
+      { name: "SARSWATI SHENDGE", party: "Corporator", phone: "9100000000" },
+      { name: "SMITA VASTE", party: "Corporator", phone: "8805435152" },
+      { name: "DHEERAJ RAMCHANDRA GHATE", party: "Corporator", phone: "9822871530" }
     ]
   },
   {
@@ -514,13 +513,13 @@ export const getWardZone = (wardId) => {
 };
 
 export const EMAIL_TEMPLATES = {
-  pothole: "I am reporting a dangerous pothole at the specified location. It is causing significant risk to commuters and needs urgent repair.",
-  garbage: "There is a heavy accumulation of garbage in this area. It's causing unhygienic conditions and foul smell. Requesting immediate clearance.",
-  streetlight: "The streetlights in this area are not functioning, making it unsafe for residents at night. Please arrange for repair/replacement.",
-  water: "There is a critical water supply issue/leakage reported in this locality. Please look into this urgently.",
-  tree: "Issue regarding tree maintenance or park cleanliness. Requesting the concerned department to take action.",
-  illegal: "Reporting an unauthorized or illegal construction activity in the ward. Please verify and take necessary steps.",
-  stray: "Issues with stray animals causing disturbance or safety concerns in the neighborhood.",
-  other: "Reporting a civic issue that requires attention from the municipal authorities."
+  pothole: "Respected [NAME] Sir/Madam, I would like to bring to your attention a pothole issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
+  garbage: "Respected [NAME] Sir/Madam, I would like to bring to your attention a garbage accumulation issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
+  streetlight: "Respected [NAME] Sir/Madam, I would like to bring to your attention a broken streetlight issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
+  water: "Respected [NAME] Sir/Madam, I would like to bring to your attention a water supply/drainage issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
+  tree: "Respected [NAME] Sir/Madam, I would like to bring to your attention a tree maintenance/park issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
+  illegal: "Respected [NAME] Sir/Madam, I would like to bring to your attention an illegal construction issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
+  stray: "Respected [NAME] Sir/Madam, I would like to bring to your attention a stray animal issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
+  other: "Respected [NAME] Sir/Madam, I would like to bring to your attention a civic issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated."
 };
 </toolcall_result>

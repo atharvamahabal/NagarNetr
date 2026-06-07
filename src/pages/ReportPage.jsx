@@ -15,6 +15,14 @@ const ReportPage = () => {
   const [submitted, setSubmitted] = useState(false)
   const [ticketNumber, setTicketNumber] = useState('')
 
+  useEffect(() => {
+    if (ward && selectedCategory && !description) {
+      const template = EMAIL_TEMPLATES[selectedCategory.id] || ''
+      const nagarsevakName = ward.corporators[0]?.name || 'Nagarsevak'
+      setDescription(template.replace('[NAME]', nagarsevakName))
+    }
+  }, [ward, selectedCategory])
+
   const handlePhotoUpload = (e) => {
     const file = e.target.files[0]
     if (file) {
@@ -52,16 +60,21 @@ const ReportPage = () => {
 
   if (submitted) {
     const zone = getWardZone(ward?.id)
+    const nagarsevak = ward?.corporators[0]
+    
     const emailSubject = zone 
       ? `Zone ${zone.code} (${zone.name}) — Ward ${ward.id} — ${selectedCategory?.label}`
       : `Ward ${ward?.id} — ${selectedCategory?.label}`
     
-    const emailBody = `${EMAIL_TEMPLATES[selectedCategory?.id] || ''}\n\n` +
-      `Description: ${description || 'No additional details provided.'}\n` +
-      `Ward: ${ward?.id} (${ward?.name})\n` +
+    const baseMessage = description || (EMAIL_TEMPLATES[selectedCategory?.id]?.replace('[NAME]', nagarsevak?.name || 'Nagarsevak') || '')
+    const photoNote = photo ? "\n(Note: I have attached a photo of the issue for your reference.)" : ""
+    
+    const fullMessage = `${baseMessage}${photoNote}\n\n` +
+      `Location: Ward ${ward?.id} (${ward?.name})\n` +
       `Ticket Reference: ${ticketNumber}`
 
-    const mailtoUrl = `mailto:egov@pcmcindia.gov.in?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+    const mailtoUrl = `mailto:egov@pcmcindia.gov.in?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(fullMessage)}`
+    const whatsappUrl = `https://wa.me/${nagarsevak?.phone || '9100000000'}?text=${encodeURIComponent(fullMessage)}`
 
     return (
       <div className="flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
@@ -69,7 +82,7 @@ const ReportPage = () => {
           <CheckCircle2 size={60} />
         </div>
         <h2 className="text-3xl font-bold text-secondary mb-2">Complaint Submitted!</h2>
-        <p className="text-gray-600 mb-6">Thank you for your civic responsibility.</p>
+        <p className="text-gray-600 mb-6">Choose how you want to share this report:</p>
         
         <div className="bg-white border-2 border-dashed border-primary rounded-xl p-6 mb-8 w-full max-w-sm">
           <p className="text-sm text-gray-500 uppercase tracking-widest mb-1">Ticket Number</p>
@@ -78,13 +91,13 @@ const ReportPage = () => {
 
         <div className="flex flex-col gap-3 w-full max-w-sm">
           <a 
-            href={`https://wa.me/${ward?.corporators[0]?.phone || '9100000000'}?text=Hello, I have reported a ${selectedCategory?.label} issue in ${ward?.name}. Reference: ${ticketNumber}`}
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-8 rounded-xl hover:opacity-90 transition-opacity"
           >
             <MessageSquare size={20} />
-            Share with Nagarsevak
+            Share on WhatsApp
           </a>
 
           <a 
@@ -92,7 +105,7 @@ const ReportPage = () => {
             className="flex items-center justify-center gap-2 bg-secondary text-white font-bold py-4 px-8 rounded-xl hover:opacity-90 transition-opacity"
           >
             <Mail size={20} />
-            Email Central PCMC (Zone {zone?.code || 'N/A'})
+            Send via Email
           </a>
 
           <button 
