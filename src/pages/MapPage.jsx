@@ -5,6 +5,7 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { WARD_DATA } from '../data/wards'
 import { Search, MapPin } from 'lucide-react'
+import { cn } from '../utils/cn'
 
 // Fix for Leaflet default marker icons in React
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -19,12 +20,26 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
+// Helper function to get marker color based on complaints
+const getMarkerIcon = (complaintCount) => {
+  let color = '#22c55e'; // Green (Low)
+  if (complaintCount > 30) color = '#ef4444'; // Red (High)
+  else if (complaintCount > 10) color = '#f59e0b'; // Amber (Medium)
+
+  return L.divIcon({
+    className: 'custom-div-icon',
+    html: `<div style="background-color: ${color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; items-center; justify-center; color: white; font-size: 10px; font-weight: bold;">${complaintCount}</div>`,
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+  });
+};
+
 // Pune Coordinates
 const PUNE_CENTER = [18.5204, 73.8567];
 
 const MapPage = () => {
   const [searchQuery, setSearchQuery] = useState('')
-  const [selectedWard, setSelectedWard] = useState(null)
 
   const filteredWards = WARD_DATA.filter(w => 
     w.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -53,11 +68,11 @@ const MapPage = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          {/* MVP: Just showing markers for some wards since we don't have geojson polygons */}
-          {WARD_DATA.slice(0, 10).map((ward, idx) => (
+          {filteredWards.map((ward) => (
             <Marker 
               key={ward.id} 
-              position={[PUNE_CENTER[0] + (Math.random() - 0.5) * 0.1, PUNE_CENTER[1] + (Math.random() - 0.5) * 0.1]}
+              position={[ward.lat, ward.lng]}
+              icon={getMarkerIcon(ward.complaints)}
             >
               <Popup>
                 <div className="p-1">
@@ -71,7 +86,10 @@ const MapPage = () => {
                   <div className="mt-3 pt-2 border-t border-gray-100 flex justify-between items-center">
                     <div className="flex flex-col">
                       <span className="text-[10px] text-gray-400">Open Complaints</span>
-                      <span className="font-bold text-red-500">24</span>
+                      <span className={cn(
+                        "font-bold",
+                        ward.complaints > 30 ? "text-red-500" : ward.complaints > 10 ? "text-amber-500" : "text-green-500"
+                      )}>{ward.complaints}</span>
                     </div>
                     <Link to="/report" className="bg-primary text-white text-[10px] font-bold px-3 py-1.5 rounded-lg">
                       Report Here

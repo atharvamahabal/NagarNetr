@@ -102,8 +102,18 @@ for (let i = 1; i <= 41; i++) {
         { name: `Nagarsevak B (Ward ${i})`, party: "NCP", phone: "9100000000" },
         { name: `Nagarsevak C (Ward ${i})`, party: "INC", phone: "9100000000" },
         { name: `Nagarsevak D (Ward ${i})`, party: "SS", phone: "9100000000" }
-      ]
+      ],
+      // Adding randomized lat/lng for Pune area
+      lat: 18.45 + Math.random() * 0.15,
+      lng: 73.75 + Math.random() * 0.2,
+      complaints: Math.floor(Math.random() * 50)
     });
+  } else {
+    // Add coordinates and complaints to existing real wards
+    const ward = WARD_DATA.find(w => w.id === i);
+    ward.lat = 18.45 + Math.random() * 0.15;
+    ward.lng = 73.75 + Math.random() * 0.2;
+    ward.complaints = Math.floor(Math.random() * 50);
   }
 }
 
