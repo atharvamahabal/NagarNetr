@@ -1,413 +1,364 @@
 export const WARD_DATA = [
   {
     id: 1,
-    name: "Kalas-Dhanori-Lohegaon",
+    name: "Kalas-Dhanori",
     corporators: [
-      { name: "Ashwini Rahul Bhandare", party: "BJP", phone: "9100000001" },
-      { name: "Dangat Sangita Sandeep", party: "BJP", phone: "9100000002" },
-      { name: "Rekha Chandrakant Tingre", party: "NCP", phone: "9100000003" },
-      { name: "Anil (Bobby) Vasantrao Tingre", party: "BJP", phone: "9100000004" }
+      { name: "JADHAV AISHWARYA ASHUTOSH", party: "Corporator A", phone: "9890881177" },
+      { name: "MARUTI (NANA) SANGDE", party: "Corporator B", phone: "9763636463" },
+      { name: "TINGARE REKHA CHONRAKANT", party: "Corporator C", phone: "9422013133" },
+      { name: "ANIL (BOBBY) VASANTRAO TINGARE", party: "Corporator D", phone: "9011777777" }
     ]
   },
   {
     id: 2,
-    name: "Phulenagar-Nagpur Chawl",
+    name: "Phule Nagar-Nagpur Chawl",
     corporators: [
-      { name: "Dhende Nandini Siddharth", party: "NCP", phone: "9100000005" },
-      { name: "Ravi (Harshal) Ramesh Tingre", party: "NCP", phone: "9100000006" },
-      { name: "Shital Ajay Sawant", party: "NCP", phone: "9100000007" },
-      { name: "Suhas Vijay Tingre", party: "NCP", phone: "9100000008" }
+      { name: "DR. DHENDE SIDDHARTHA YASHWANT", party: "Corporator A", phone: "9422030442" },
+      { name: "FARJANA AYUB SHAIKH", party: "Corporator B", phone: "7028134786" },
+      { name: "SAWANT SHITAL AJAY", party: "Corporator C", phone: "9850841303" },
+      { name: "TINGARE SUNIL VIJAY", party: "Corporator D", phone: "9155777777" }
     ]
   },
   {
     id: 3,
-    name: "Vimannagar-Lohegaon",
+    name: "Viman Nagar-Somnath Nagar",
     corporators: [
-      { name: "Dr. Shreyas Pritam Khandve", party: "BJP", phone: "9100000025" },
-      { name: "Anil Dilip Satav", party: "BJP", phone: "9100000026" },
-      { name: "Aishwarya Surendra Pathare", party: "BJP", phone: "9100000027" },
-      { name: "Dabhade Ramdas Dattatray", party: "BJP", phone: "9100000028" }
+      { name: "BHANDARE RAHUL KONDIRAM", party: "Corporator A", phone: "9763073444" },
+      { name: "GALANDE KHOSE SHEWTA", party: "Corporator B", phone: "9922921222" },
+      { name: "KARNE (GURUJI) BAPURAO GANGARAM", party: "Corporator D", phone: "9823802598" }
     ]
   },
   {
     id: 4,
-    name: "Kharadi-Wagholi",
+    name: "Kharadi-Chandanagar",
     corporators: [
-      { name: "Bansode Shailjeet Jaywant", party: "BJP", phone: "9100000033" },
-      { name: "Ratnamala Sandeep Satav", party: "BJP", phone: "9100000034" },
-      { name: "Bharane Trupti Santosh", party: "BJP", phone: "9100000035" },
-      { name: "Surendra Bapusaheb Pathare", party: "BJP", phone: "9100000036" }
+      { name: "JADHAV BHAIYASAHEB TUKARAM", party: "Corporator A", phone: "7387821361" },
+      { name: "PATHARE SUMAN BALASAHEB", party: "Corporator B", phone: "9850412819" },
+      { name: "PATHARE SANJILA BAPUSAHEB", party: "Corporator C", phone: "9822006300" },
+      { name: "PATHARE MAHENDRA PANDHARINATH", party: "Corporator D", phone: "9850550777" }
     ]
   },
   {
     id: 5,
-    name: "Kalyaninagar-Vadgaonsheri",
+    name: "Vadagaon Sheri",
     corporators: [
-      { name: "Narayan Mohan Galande", party: "BJP", phone: "9100000037" },
-      { name: "Galande Shweta Mukund", party: "BJP", phone: "9100000038" },
-      { name: "Galande Kavita Mahendra", party: "BJP", phone: "9100000039" },
-      { name: "Mulik Yogesh Tukaram", party: "BJP", phone: "9100000040" }
+      { name: "SUNITA GALANDE", party: "Corporator A", phone: "9922655894" },
+      { name: "SHITAL DNYANESHWAR SHINDE", party: "Corporator B", phone: "9689935812" },
+      { name: "MULIK YOGESH TUKARAM", party: "Corporator C", phone: "9890455555" },
+      { name: "JARHAD SANDIP NAMDEV", party: "Corporator D", phone: "9175055555" }
     ]
   },
   {
     id: 6,
-    name: "Yerawada-Gandhinagar",
+    name: "Yerawada",
     corporators: [
-      { name: "Adv. Avinash Raj Salve", party: "INC", phone: "9100000041" },
-      { name: "Saira Hanif Sheikh", party: "INC", phone: "9100000042" },
-      { name: "Ashwini Daniel Landge", party: "INC", phone: "9100000043" },
-      { name: "Vishal Hari Malke", party: "INC", phone: "9100000044" }
+      { name: "ADV. AVINASH RAJ SALVE", party: "Corporator A", phone: "989020078" },
+      { name: "CHAVAN SHEWTA SHRISHETH (ANIL)", party: "Corporator B", phone: "9371010449" },
+      { name: "LANDGE ASHWINI DANIAL", party: "Corporator C", phone: "8888711915" },
+      { name: "BHOSALE SANJAY SHASHIKANT", party: "Corporator D", phone: "9021680623" }
     ]
   },
   {
     id: 7,
-    name: "Gokhalenagar-Wakdewadi",
+    name: "Pune University-Wakadewadi",
     corporators: [
-      { name: "Manvatkar Nisha Sachin", party: "BJP", phone: "9100000045" },
-      { name: "Anjali Vinodanna Orse", party: "NCP", phone: "9100000046" },
-      { name: "Adv. Nikam Nilesh Narayan", party: "NCP", phone: "9100000047" },
-      { name: "Datta Bahirat", party: "NCP", phone: "9100000048" }
+      { name: "LANDAGE SONALI SANTOSH", party: "Corporator A", phone: "9860518804" },
+      { name: "KALE RAJSHREE DNYANESHWAR", party: "Corporator B", phone: "8975385787" },
+      { name: "MALWE AADITYA ANIL", party: "Corporator C", phone: "9890088080" },
+      { name: "BHOSALE RESHMA ANIL", party: "Corporator D", phone: "9922611000" }
     ]
   },
   {
     id: 8,
     name: "Aundh-Bopodi",
     corporators: [
-      { name: "Parshuram Balkrishna Wadekar", party: "RPI-A", phone: "9100000049" },
-      { name: "Bhakti Ajit Gaikwad", party: "BJP", phone: "9100000050" },
-      { name: "Chhajed Sapna Anand", party: "BJP", phone: "9100000051" },
-      { name: "Chandrashekhar (Sunny) Nimhan", party: "BJP", phone: "9100000052" }
+      { name: "SUNITA PARSHURAM WADEKAR", party: "Corporator A", phone: "9881319158" },
+      { name: "ARCHANA MADHUKAR MUSALE", party: "Corporator B", phone: "9422001202" }
     ]
   },
   {
     id: 9,
-    name: "Sus-Baner-Pashan",
+    name: "Baner-Balevadi-Pashan",
     corporators: [
-      { name: "Chimte Rohini Sudhir", party: "BJP", phone: "9100000009" },
-      { name: "Chandere Baburao Dattoba", party: "NCP", phone: "9100000010" },
-      { name: "Kokate Mayuri Rahul", party: "BJP", phone: "9100000011" },
-      { name: "Amol Ratan Balwadkar", party: "NCP", phone: "9100000012" }
+      { name: "SAIKAR SWAPNALI PRALHAD", party: "Corporator A", phone: "9850998577" },
+      { name: "JYOTI GANESH KALAMKAR", party: "Corporator B", phone: "96004112424" },
+      { name: "AMOL RATAN BALWADKAR", party: "Corporator C", phone: "8888000009" },
+      { name: "BABURAO DATTOBA CHANDERE", party: "Corporator D", phone: "9922511010" }
     ]
   },
   {
     id: 10,
-    name: "Bavdhan-Bhusari Colony",
+    name: "Bavdhan-Kothrud",
     corporators: [
-      { name: "Kiran Dagde Patil", party: "BJP", phone: "9100000053" },
-      { name: "Pawar Rupali Sachin", party: "BJP", phone: "9100000054" },
-      { name: "Varape Alpana Ganesh", party: "BJP", phone: "9100000055" },
-      { name: "Vedepatil Dilip Tukaram", party: "BJP", phone: "9100000056" }
+      { name: "KIRAN DAGADE PATIL", party: "Corporator A", phone: "9890302081" },
+      { name: "PRABHUNE SHRADDHA ASHOK", party: "Corporator B", phone: "9922715850" },
+      { name: "VARPE ALPANA GANESH", party: "Corporator C", phone: "9850548885" },
+      { name: "DILIP VEDE PATIL", party: "Corporator D", phone: "9822096633" }
     ]
   },
   {
     id: 11,
-    name: "Rambaug Colony-Shivteerthnagar",
+    name: "Rambaug Colony-Shivtirtha Nagar",
     corporators: [
-      { name: "Harshwardhan Deepak Mankar", party: "NCP", phone: "9100000057" },
-      { name: "Dokh Deepali Santosh", party: "INC", phone: "9100000058" },
-      { name: "Butala Manisha Sandeep", party: "BJP", phone: "9100000059" },
-      { name: "Adv. Ramchandra Atmaram Kadam", party: "INC", phone: "9100000060" }
+      { name: "DIPAK MANKAR", party: "Corporator A", phone: "9527272727" },
+      { name: "MARNE CHHAYA AJAY", party: "Corporator B", phone: "9823478488" },
+      { name: "MARATHE VAISHALI RAJENDRA", party: "Corporator C", phone: "8007966017" },
+      { name: "ADV. KADAM RAMCHANDRA ALIAS CHAN ATMARAM", party: "Corporator D", phone: "9822455555" }
     ]
   },
   {
     id: 12,
-    name: "Shivajinagar-Model Colony",
+    name: "Mayur Colony-Dahanuka Colony",
     corporators: [
-      { name: "Amruta Ram Mhetre Zadpe", party: "BJP", phone: "9100000061" },
-      { name: "Apoorva Dattatray Khade", party: "BJP", phone: "9100000062" },
-      { name: "Pooja Pratul Jagade", party: "BJP", phone: "9100000063" },
-      { name: "Ekabote Nivedita Gajanan", party: "BJP", phone: "9100000064" }
+      { name: "HARSHALI DINESH MATHWAD", party: "Corporator A", phone: "9762162239" },
+      { name: "VASANTI NAVNATH JADHAV", party: "Corporator B", phone: "8308197179" },
+      { name: "MURLIDHAR MOHOL", party: "Corporator C", phone: "8888349498" },
+      { name: "SUTAR PRITHVIRAJ SHASHIKANT", party: "Corporator D", phone: "9890070005" }
     ]
   },
   {
     id: 13,
-    name: "Pune Station-Jay Jawannagar",
+    name: "Erandwana-Happy Colony",
     corporators: [
-      { name: "Nilesh Suresh Alhat", party: "BJP", phone: "9100000065" },
-      { name: "Sumayya Maheboob Nadaf", party: "INC", phone: "9100000066" },
-      { name: "Vaishali Nagnath Bhalerao", party: "INC", phone: "9100000067" },
-      { name: "Arvind Shinde", party: "INC", phone: "9100000068" }
+      { name: "DIPAK ASHOK POTE", party: "Corporator A", phone: "9503990009" },
+      { name: "MADHURI SHRIRAM SAHASTRABUDHE", party: "Corporator B", phone: "9422338800" },
+      { name: "MANJUSHRI SANDEEP KHARDEKAR", party: "Corporator C", phone: "9890405999" },
+      { name: "JAYANT GOVIND BHAVE", party: "Corporator D", phone: "9881127183" }
     ]
   },
   {
     id: 14,
-    name: "Koregaon Park-Ghorpadi-Mundhwa",
+    name: "Deccan Gymkhana-Model Colony",
     corporators: [
-      { name: "Himali Navnath Kamble", party: "BJP", phone: "9100000013" },
-      { name: "Dhayarkar Kishor Vishnu", party: "BJP", phone: "9100000014" },
-      { name: "Kawade Surekha Chandrakant", party: "NCP", phone: "9100000015" },
-      { name: "Gaikwad Umesh Dnyaneshwar", party: "BJP", phone: "9100000016" }
+      { name: "LOKHANDE SWATI ASHOK", party: "Corporator A", phone: "9850426458" },
+      { name: "KHADE NILIMA DATTATRAYA", party: "Corporator B", phone: "9689940467" },
+      { name: "EKBOTE JYOTSNA GAJANAN", party: "Corporator C", phone: "9922007310" },
+      { name: "SIDDHARTH PADMAKAR ALIAS ANIL SHIR", party: "Corporator D", phone: "9890023600" }
     ]
   },
   {
     id: 15,
-    name: "Manjri Budhruk-Keshavnagar",
+    name: "Shaniwar Peth",
     corporators: [
-      { name: "Abnave Nanda Anil", party: "BJP", phone: "9100000069" },
-      { name: "Dr. Dada Kodre", party: "BJP", phone: "9100000070" },
-      { name: "Ghule Sarika Amit", party: "BJP", phone: "9100000071" },
-      { name: "Ajit Dattatraya Ghule", party: "NCP", phone: "9100000072" }
+      { name: "HEMANT NARAYAN RASNE", party: "Corporator A", phone: "9822109810" },
+      { name: "ADV. GAYATRI RATNADIP KHADKE", party: "Corporator B", phone: "9100000000" },
+      { name: "SMT. TILAK MUKTA SHAILESH", party: "Corporator C", phone: "9100000000" },
+      { name: "YENPURE RAJESH TUKARAM", party: "Corporator D", phone: "9822109810" }
     ]
   },
   {
     id: 16,
-    name: "Hadapsar-Satavwadi",
+    name: "Kasba Peth-Somwar Peth",
     corporators: [
-      { name: "Bankar Vaishali Sunil", party: "NCP", phone: "9100000073" },
-      { name: "Jangle Ujwala Subhash", party: "BJP", phone: "9100000074" },
-      { name: "Gawade Nitin Nivrutti", party: "SS-UBT", phone: "9100000075" },
-      { name: "Tupe Maruti Shivaji", party: "BJP", phone: "9100000076" }
+      { name: "PALLAVI CHANDRASHEKHAR JAWLE", party: "Corporator A", phone: "9100000000" },
+      { name: "RAVINDRA HEMRAJ DHANGEKAR", party: "Corporator B", phone: "8605883800" },
+      { name: "SUJATA SADANAND SHETTY", party: "Corporator C", phone: "9822531681" },
+      { name: "YOGESH DATTATRAYA SAMEL", party: "Corporator D", phone: "9822863862" }
     ]
   },
   {
     id: 17,
-    name: "Ramtekdi-Malwadi-Vaiduwadi",
+    name: "Rasta Peth-Raviwar Peth",
     corporators: [
-      { name: "Londhe Khandu Satish", party: "BJP", phone: "9100000077" },
-      { name: "Hemlata Nilesh Magar", party: "NCP", phone: "9100000078" },
-      { name: "Payal Viraj Tupe", party: "BJP", phone: "9100000079" },
-      { name: "Prashant (Mama) Tupe", party: "BJP", phone: "9100000080" }
+      { name: "LAXMI UDAYKANT ANDEKAR", party: "Corporator A", phone: "8657867070" },
+      { name: "SULOCHANA TEJENDRA KONDHARE", party: "Corporator B", phone: "8888881818" },
+      { name: "ANDEKAR VANRAJ SURYAKANT", party: "Corporator C", phone: "9975249994" },
+      { name: "DHANWADE VISHAL GORAKH", party: "Corporator D", phone: "9923585151" }
     ]
   },
   {
     id: 18,
-    name: "Wanowrie-Salunkhe Vihar",
+    name: "Khadakmal Aali-Mahatma Phule Peth",
     corporators: [
-      { name: "Adv. Kedari Sahil Shivaji", party: "INC", phone: "9100000081" },
-      { name: "Kalinda Muralidhar Punde", party: "BJP", phone: "9100000082" },
-      { name: "Komal Samir Shendkar", party: "BJP", phone: "9100000083" },
-      { name: "Jagtap Prashant Sudam", party: "INC", phone: "9100000084" }
+      { name: "VIJAYALAXMI MOTILAL HARIHAR", party: "Corporator A", phone: "9422323968" },
+      { name: "AARTI SACHIN KONDHARE", party: "Corporator B", phone: "9923384031" },
+      { name: "AJAY PANDURANG KHEDEKAR", party: "Corporator C", phone: "8957575757" },
+      { name: "SAMRAT ABHAY THORAT", party: "Corporator D", phone: "9823024646" }
     ]
   },
   {
     id: 19,
-    name: "Kondhwa Khurd-Kausurbaug",
+    name: "Lohiyanagar-Kasewadi",
     corporators: [
-      { name: "Taslim Hasan Shaikh", party: "INC", phone: "9100000085" },
-      { name: "Aasia Maniyar", party: "INC", phone: "9100000086" },
-      { name: "Kashif Fakrul Syed", party: "INC", phone: "9100000087" },
-      { name: "Pathan Abdul Ghafoor Ahmed", party: "NCP-SP", phone: "9100000088" }
+      { name: "AVINASH RAMESH BAGWE", party: "Corporator A", phone: "9822596232" },
+      { name: "LADKAT MANISHA SANDEEP", party: "Corporator B", phone: "9422007275" },
+      { name: "PATIL ARCHANA TUSHAR", party: "Corporator C", phone: "8446861777" },
+      { name: "RAFIQ ABDUL RAHIM SHAIKH", party: "Corporator D", phone: "9822596232" }
     ]
   },
   {
     id: 20,
-    name: "Shankar Maharaj Math-Bibewadi",
+    name: "Tadiwala Road-Sasoon Hospital",
     corporators: [
-      { name: "Aaba (Rajendra) Y. Shilimkar", party: "BJP", phone: "9100000089" },
-      { name: "Divekar Tanvi Prashant", party: "BJP", phone: "9100000090" },
-      { name: "Deshpande Mansi Manoj", party: "BJP", phone: "9100000091" },
-      { name: "Gaurav Ganesh Ghule", party: "NCP", phone: "9100000092" }
+      { name: "GAIKWAD PRADEEP MACHHINDRA", party: "Corporator A", phone: "9922133698" },
+      { name: "CHANDBI HAJI NADAF", party: "Corporator B", phone: "9922953050" },
+      { name: "LATABAI DAYARAM RAJGURU", party: "Corporator C", phone: "9371145770" },
+      { name: "ARVIND TUKARAM SHINDE", party: "Corporator D", phone: "9100000000" }
     ]
   },
   {
     id: 21,
-    name: "Mukundnagar-Salisbury Park",
+    name: "Koregaon Park-Ghorpadi",
     corporators: [
-      { name: "Vairage Prasannajit Bharat", party: "BJP", phone: "9100000093" },
-      { name: "Shilimkar Siddhi Avinash", party: "BJP", phone: "9100000094" },
-      { name: "Chorbele Manisha Pravin", party: "BJP", phone: "9100000095" },
-      { name: "Bhimale Srinath Yashwant", party: "BJP", phone: "9100000096" }
+      { name: "MISS HIMALITAI NAVNATH KAMBALE", party: "Corporator A", phone: "9100000000" },
+      { name: "LATA VISHNU DHAYARKAR", party: "Corporator B", phone: "9623696635" },
+      { name: "MANGALA PRAKASH MANTRI", party: "Corporator C", phone: "9422013337" },
+      { name: "UMESH DNYANESHWAR GAIKWAD", party: "Corporator D", phone: "9850555555" }
     ]
   },
   {
     id: 22,
-    name: "Kashewadi-Dias Plot",
+    name: "Mundhwa-Magarpatta City",
     corporators: [
-      { name: "Mrunal Pandurang Kamble", party: "BJP", phone: "9100000097" },
-      { name: "Rafiq Abdul Rahim Sheikh", party: "INC", phone: "9100000098" },
-      { name: "Archana Tushar Patil", party: "BJP", phone: "9100000099" },
-      { name: "Vivek Mahadev Yadav", party: "BJP", phone: "9100000100" }
+      { name: "SHRI. CHETAN VITTAL TUPE (Corporator/MLA)", party: "Corporator A", phone: "9890055000" },
+      { name: "HEMLATA NILESH MAGAR", party: "Corporator B", phone: "9823109003" },
+      { name: "SMT. POOJA KODRE", party: "Corporator C", phone: "9100000000" },
+      { name: "SUNIL JAYWANT GAIKWAD", party: "Corporator D", phone: "9689932346" }
     ]
   },
   {
     id: 23,
-    name: "Rawiwar Peth-Nana Peth",
+    name: "Hadapsar Gaothan-Satavwadi",
     corporators: [
-      { name: "Javale Pallavi Chandrashekhar", party: "BJP", phone: "9100000101" },
-      { name: "Andekar Sonali Vanraj", party: "NCP", phone: "9100000102" },
-      { name: "Andekar Lakshmi Udayakant", party: "NCP", phone: "9100000103" },
-      { name: "Dhanwade Vishal Gorakh", party: "BJP", phone: "9100000104" }
+      { name: "YOGESH DATTATRAYA SASANE", party: "Corporator A", phone: "9922939677" },
+      { name: "VAISHALI SUNIL BANKAR", party: "Corporator B", phone: "9689932350" },
+      { name: "UJJWALA SUBHASH JANGALE", party: "Corporator C", phone: "9922732424" },
+      { name: "MARUTI SHIVAJI TUPE", party: "Corporator D", phone: "9371002728" }
     ]
   },
   {
     id: 24,
-    name: "Kasba Ganpati-Kamla Nehru-KEM",
+    name: "Ramtekdi",
     corporators: [
-      { name: "Bahirat Kalpana Dilip", party: "BJP", phone: "9100000105" },
-      { name: "Ujwala Ganesh Yadav", party: "BJP", phone: "9100000106" },
-      { name: "Devendra (Chhotu) Wadke", party: "BJP", phone: "9100000107" },
-      { name: "Bidkar Ganesh Madhukar", party: "BJP", phone: "9100000108" }
-    ]
-  },
-  {
-    id: 25,
-    name: "Shaniwar Peth-Mahatma Phule Mandai",
-    corporators: [
-      { name: "Swapnali Nitin Pandit", party: "BJP", phone: "9100000109" },
-      { name: "Raghavendra (Bappu) Mankar", party: "BJP", phone: "9100000110" },
-      { name: "Swarada Gaurav Bapat", party: "BJP", phone: "9100000111" },
-      { name: "Tilak Kunal Shailesh", party: "BJP", phone: "9100000112" }
-    ]
-  },
-  {
-    id: 26,
-    name: "Ghorpade Peth-Gurwarpeth-Samta Bhoomi",
-    corporators: [
-      { name: "Ganesh Bugaji Kalyankar", party: "NCP", phone: "9100000113" },
-      { name: "Malwade Sneha Namdev", party: "BJP", phone: "9100000114" },
-      { name: "Aishwarya Samrat Thorat", party: "BJP", phone: "9100000115" },
-      { name: "Ajay Appasaheb Khedekar", party: "BJP", phone: "9100000116" }
-    ]
-  },
-  {
-    id: 27,
-    name: "Navi Peth-Parvati",
-    corporators: [
-      { name: "Mahesh (Amar) Vilas Awale", party: "BJP", phone: "9100000117" },
-      { name: "Smita Vaste", party: "BJP", phone: "9100000118" },
-      { name: "Gaud Lata Raghunath", party: "BJP", phone: "9100000119" },
-      { name: "Dheeraj Ramachandra Ghate", party: "BJP", phone: "9100000120" }
-    ]
-  },
-  {
-    id: 28,
-    name: "Janta Vasahat-Hingane Khurd",
-    corporators: [
-      { name: "Rithe Vrushali Anand", party: "BJP", phone: "9100000121" },
-      { name: "Gadade Priya Shivaji", party: "NCP", phone: "9100000122" },
-      { name: "Suraj Nathuram Lokhande", party: "NCP", phone: "9100000123" },
-      { name: "Adv. Prasanna (Dada) Jagtap", party: "BJP", phone: "9100000124" }
-    ]
-  },
-  {
-    id: 29,
-    name: "Deccan Gymkhana-Happy Colony",
-    corporators: [
-      { name: "Pande Sunil Namdev", party: "BJP", phone: "9100000125" },
-      { name: "Adv. Sawalekar Mitali Kuldeep", party: "BJP", phone: "9100000126" },
-      { name: "Khardekar Manjushree Sandeep", party: "BJP", phone: "9100000127" },
-      { name: "Joshi Puneeth Srikant", party: "BJP", phone: "9100000128" }
+      { name: "ASHOK DHAKU KAMBLE", party: "Corporator A", phone: "9890591054" },
+      { name: "ANAND ANNA ALKUNTE", party: "Corporator C", phone: "7350277277" }
     ]
   },
   {
     id: 30,
-    name: "Karvenagar-Hingane Home Colony",
+    name: "Janata Vasahat-Dattawadi",
     corporators: [
-      { name: "Dudhane Swapnil Devaram", party: "NCP", phone: "9100000129" },
-      { name: "Barate Reshma Santosh", party: "BJP", phone: "9100000130" },
-      { name: "Tejashree Mahesh Pawale", party: "BJP", phone: "9100000131" },
-      { name: "Barate Rajesh Kisan", party: "BJP", phone: "9100000132" }
+      { name: "ANAND RAMESH RITHE", party: "Corporator A", phone: "9822663636" },
+      { name: "PRIYA SHIVAJI GADADE", party: "Corporator B", phone: "9689935636" },
+      { name: "ANITA SANTOSH KADAM", party: "Corporator C", phone: "7744858251" },
+      { name: "SHANKAR GANPATI PAWAR", party: "Corporator D", phone: "9325565757" }
     ]
   },
   {
     id: 31,
-    name: "Mayur Colony-Kothrud",
+    name: "Karve Nagar",
     corporators: [
-      { name: "Mathwad Dinesh Mahadev", party: "BJP", phone: "9100000133" },
-      { name: "Jyotsna Jagannath Kulkarni", party: "BJP", phone: "9100000134" },
-      { name: "Vasanti Navnath Jadhav", party: "BJP", phone: "9100000135" },
-      { name: "Sutar Prithviraj Shashikant", party: "BJP", phone: "9100000136" }
+      { name: "MENGDE SUSHIL SHIVRAM", party: "Corporator A", phone: "9881007008" },
+      { name: "DUDHANE LAKSHMI DEVRAM", party: "Corporator B", phone: "9975343434" },
+      { name: "CHAUDHARI VRUSHALI DATTATRAY", party: "Corporator C", phone: "9100000000" },
+      { name: "RAJABHAU KISAN BARATE", party: "Corporator D", phone: "9689934911" }
     ]
   },
   {
     id: 32,
-    name: "Warje-Popularnagar",
+    name: "Warje Malwadi",
     corporators: [
-      { name: "Bhosale Harshada Shantanu", party: "BJP", phone: "9100000137" },
-      { name: "Barate Bharatbhushan Sharadchandra", party: "BJP", phone: "9100000138" },
-      { name: "Wanjale Sayali Rameshbhai", party: "BJP", phone: "9100000139" },
-      { name: "Dodke Sachin Shivajirao", party: "BJP", phone: "9100000140" }
+      { name: "BARATE DILIP PRABHAKAR", party: "Corporator A", phone: "9823022182" },
+      { name: "WANJALE SAYALI RAMESH", party: "Corporator B", phone: "9673711626" },
+      { name: "DIPALI PRADEEP (BABA) DHUMAL", party: "Corporator C", phone: "9850623184" },
+      { name: "DODKE SACHIN SHIVAJIRAO", party: "Corporator D", phone: "9822197273" }
     ]
   },
   {
     id: 33,
-    name: "Shivane-Khadakwasla-Dhayari",
+    name: "Vadgaon Dhayari-Suncity",
     corporators: [
-      { name: "Dhanashree Dattatray Kolhe", party: "BJP", phone: "9100000141" },
-      { name: "Anita Tukaram Ingle", party: "NCP-SP", phone: "9100000142" },
-      { name: "Nanekar Subhash Muralidhar", party: "BJP", phone: "9100000143" },
-      { name: "Sopan (Kaka) Chavan", party: "NCP-SP", phone: "9100000144" }
+      { name: "HARIDAS KRUSHNA CHARWAD", party: "Corporator A", phone: "7387680100" },
+      { name: "HEMA ALIAS RAJASHREE DILIP NAVALE", party: "Corporator B", phone: "9923184111" },
+      { name: "NITA ANANT DANGAT", party: "Corporator C", phone: "7387680100" },
+      { name: "RAJU MURLIDHAR LAIGUDE", party: "Corporator D", phone: "8888827827" }
     ]
   },
   {
     id: 34,
-    name: "Vadgaon Budhruk-Dhayari",
+    name: "Vadgaon Budruk-Hingane Khurd",
     corporators: [
-      { name: "Charwad Haridas Krishna", party: "BJP", phone: "9100000145" },
-      { name: "Komal Sarang Navale", party: "BJP", phone: "9100000146" },
-      { name: "Jayshree Satyawan Bhumkar", party: "BJP", phone: "9100000147" },
-      { name: "Raju Murlidhar Laygude", party: "BJP", phone: "9100000148" }
+      { name: "PRASANNA GHANSHYAM JAGTAP", party: "Corporator A", phone: "9822022950" },
+      { name: "JYOTI KISHOR GOSAWI", party: "Corporator B", phone: "9623276276" },
+      { name: "MANJUSHA DEEPAK NAGPURE", party: "Corporator C", phone: "8600406666" },
+      { name: "SHRIKANT SHASHIKANT JAGTAP", party: "Corporator D", phone: "9922433619" }
     ]
   },
   {
     id: 35,
-    name: "Suncity-Manikbaug",
+    name: "Sahakar Nagar-Padmavati",
     corporators: [
-      { name: "Gosavi Jyoti Kishor", party: "BJP", phone: "9100000149" },
-      { name: "Manjusha Deepak Nagpure", party: "BJP", phone: "9100000150" },
-      { name: "More Sachin Raosaheb", party: "BJP", phone: "9100000151" },
-      { name: "Shrikant Shashikant Jagtap", party: "BJP", phone: "9100000152" }
+      { name: "DISHA RAHUL MANE", party: "Corporator A", phone: "9822656724" },
+      { name: "ULHAS VASANTRAO BAGUL", party: "Corporator B", phone: "9822015478" },
+      { name: "ASHWINI NITIN KADAM", party: "Corporator C", phone: "9011902525" },
+      { name: "MAHESH NARSING WABLE", party: "Corporator D", phone: "9422089659" }
     ]
   },
   {
     id: 36,
-    name: "Sahakarnagar-Padmavati",
+    name: "Marketyard-Lower Indira Nagar",
     corporators: [
-      { name: "Veena Ganesh Ghosh", party: "BJP", phone: "9100000153" },
-      { name: "Bhosale Shailaja Arun", party: "BJP", phone: "9100000154" },
-      { name: "Sai Prashant Thopte", party: "BJP", phone: "9100000155" },
-      { name: "Mahesh Nanasaheb Wable", party: "BJP", phone: "9100000156" }
+      { name: "ANUSAYA ABHIMAN CHAVAN", party: "Corporator A", phone: "9623850896" },
+      { name: "RAJENDRA YASHWANT SHILIMKAR", party: "Corporator B", phone: "8087823737" },
+      { name: "MANSI MANOJ DESHPANDE", party: "Corporator C", phone: "9689930952" },
+      { name: "SUNIL DNYANDEV KAMBLE", party: "Corporator D", phone: "9657453726" }
     ]
   },
   {
     id: 37,
-    name: "Dhankawadi-Katraj Dairy",
+    name: "Upper Super Indira Nagar",
     corporators: [
-      { name: "Balabhau (Kishor) Uttam Dhankawade", party: "BJP", phone: "9100000157" },
-      { name: "Tapkir Varsha Vilas", party: "BJP", phone: "9100000158" },
-      { name: "Badak Tejashree Sachin", party: "BJP", phone: "9100000159" },
-      { name: "Arun Bhagwan Rajwade", party: "BJP", phone: "9100000160" }
+      { name: "SATHE VARSHA BHIMA", party: "Corporator A", phone: "7875841933" },
+      { name: "DHADWE RUPALI DINESH", party: "Corporator B", phone: "9527594942" },
+      { name: "OSWAL BALA ALIAS PRAMOD PREMCHAND", party: "Corporator C", phone: "9422089978" }
     ]
   },
   {
     id: 38,
-    name: "Balajinagar-Ambegaon-Katraj",
+    name: "Balajinagar-Rajiv Gandhi Nagar",
     corporators: [
-      { name: "Smita Sudhir Kondhare", party: "NCP", phone: "9100000161" },
-      { name: "Beldare Sandeep Balasaheb", party: "BJP", phone: "9100000162" },
-      { name: "Beldare Seema Yuvraj", party: "NCP", phone: "9100000163" },
-      { name: "Chorghe Pratibha Rohidas", party: "BJP", phone: "9100000164" },
-      { name: "Khopade Vyankoji Maruti", party: "BJP", phone: "9100000165" }
+      { name: "DATTATRAYA BABANRAO DHANKAWDE", party: "Corporator A", phone: "9422035378" },
+      { name: "BHOSALE RANI RAYBA", party: "Corporator B", phone: "9922555561" },
+      { name: "KADAM MANISHATAI RAJABHAU", party: "Corporator C", phone: "9422037997" },
+      { name: "PRAKASH VITHALRAO KADAM", party: "Corporator D", phone: "9822089975" }
     ]
   },
   {
     id: 39,
-    name: "Upper Super Indiranagar",
+    name: "Dhankavadi-Ambegaon",
     corporators: [
-      { name: "Varsha Bhimrao Sathe", party: "BJP", phone: "9100000166" },
-      { name: "Pratik Prakash Kadam", party: "NCP", phone: "9100000167" },
-      { name: "Dhadve Rupali Dinesh", party: "BJP", phone: "9100000168" },
-      { name: "Bala (Pramod) Premchand Oswal", party: "BJP", phone: "9100000169" }
+      { name: "DHANKAWDE BALABHAU ALIAS KISHOR UTTAM", party: "Corporator A", phone: "9545405051" },
+      { name: "ASHWINI SAGAR BHAGWAT", party: "Corporator B", phone: "9922041111" },
+      { name: "TAPKIR VARSHA VILAS", party: "Corporator C", phone: "9923109971" },
+      { name: "TAMBE VISHAL VILAS", party: "Corporator D", phone: "9822559796" }
     ]
   },
   {
     id: 40,
-    name: "Kondhwa Budhruk-Yeolewadi",
+    name: "Ambegaon Dattanagar-Katraj Gaothan",
     corporators: [
-      { name: "Archana Amit Jagtap", party: "BJP", phone: "9100000170" },
-      { name: "Kamthe Vrushali Sunil", party: "BJP", phone: "9100000171" },
-      { name: "Kadam Tushar Puja", party: "BJP", phone: "9100000172" },
-      { name: "Tilekar Ranjana Kundalik", party: "BJP", phone: "9100000173" }
+      { name: "BELDARE YUVRAJ SAMBHAJI", party: "Corporator A", phone: "9922494444" },
+      { name: "BABAR AMRUTA AJIT", party: "Corporator B", phone: "9850387007" },
+      { name: "KONDHARE SMITA SUDHIR", party: "Corporator C", phone: "9822069603" },
+      { name: "MORE VASANT KRUSHNA", party: "Corporator D", phone: "9822271859" }
     ]
   },
   {
     id: 41,
-    name: "Mohammadwadi-Undri",
+    name: "Kondhwa Budruk-Yewalewadi",
     corporators: [
-      { name: "Alhat Prachi Ashish", party: "BJP", phone: "9100000174" },
-      { name: "Bandal Nivrutti Dnyanoba", party: "NCP", phone: "9100000175" },
-      { name: "Shweta Sachin Ghule", party: "NCP", phone: "9100000176" },
-      { name: "Tarwade Atul Narayan", party: "BJP", phone: "9100000177" }
+      { name: "JAGTAP VIRSEN BAPU", party: "Corporator A", phone: "9922690747" },
+      { name: "THOSAR SANGEETA RAJENDRA", party: "Corporator B", phone: "9822300207" },
+      { name: "KAMTHE VRUSHALI SUNIL", party: "Corporator C", phone: "9657080709" },
+      { name: "TILEKAR RANJANA KUNDLIK", party: "Corporator D", phone: "9850666321" }
+    ]
+  },
+  {
+    id: 42,
+    name: "Phursungi-Lohgaon",
+    corporators: [
+      { name: "SHRI. GANESH DHORE", party: "Corporator A", phone: "9881697520" },
+      { name: "SMT. ASHWINI KISHOR POKALE", party: "Corporator B", phone: "9822272777" }
     ]
   }
 ];
@@ -425,39 +376,40 @@ const WARD_COORDINATES = {
   9: { lat: 18.559, lng: 73.792 }, // Baner
   10: { lat: 18.508, lng: 73.782 }, // Bavdhan
   11: { lat: 18.518, lng: 73.818 }, // Kothrud/Rambaug
-  12: { lat: 18.528, lng: 73.841 }, // Shivajinagar
-  13: { lat: 18.528, lng: 73.874 }, // Pune Station
-  14: { lat: 18.536, lng: 73.889 }, // Koregaon Park
-  15: { lat: 18.522, lng: 73.935 }, // Mundhwa/Magarpatta
-  16: { lat: 18.498, lng: 73.924 }, // Hadapsar
-  17: { lat: 18.495, lng: 73.905 }, // Ramtekdi
-  18: { lat: 18.485, lng: 73.895 }, // Wanowrie
-  19: { lat: 18.475, lng: 73.885 }, // Kondhwa Khurd
-  20: { lat: 18.472, lng: 73.858 }, // Bibewadi
-  21: { lat: 18.495, lng: 73.865 }, // Mukundnagar
-  22: { lat: 18.502, lng: 73.875 }, // Kashewadi
-  23: { lat: 18.515, lng: 73.865 }, // Nana Peth
-  24: { lat: 18.519, lng: 73.858 }, // Kasba Peth
-  25: { lat: 18.517, lng: 73.852 }, // Shaniwar Peth
-  26: { lat: 18.505, lng: 73.862 }, // Ghorpade Peth
+  12: { lat: 18.505, lng: 73.805 }, // Mayur Colony
+  13: { lat: 18.515, lng: 73.842 }, // Erandwana
+  14: { lat: 18.528, lng: 73.841 }, // Deccan
+  15: { lat: 18.517, lng: 73.852 }, // Shaniwar Peth
+  16: { lat: 18.519, lng: 73.858 }, // Kasba Peth
+  17: { lat: 18.515, lng: 73.865 }, // Nana Peth
+  18: { lat: 18.505, lng: 73.862 }, // Ghorpade Peth
+  19: { lat: 18.502, lng: 73.875 }, // Kashewadi
+  20: { lat: 18.528, lng: 73.874 }, // Pune Station
+  21: { lat: 18.536, lng: 73.889 }, // Koregaon Park
+  22: { lat: 18.522, lng: 73.935 }, // Mundhwa/Magarpatta
+  23: { lat: 18.498, lng: 73.924 }, // Hadapsar
+  24: { lat: 18.495, lng: 73.905 }, // Ramtekdi
+  25: { lat: 18.517, lng: 73.852 }, // Shaniwar Peth (duplicate)
+  26: { lat: 18.505, lng: 73.862 }, // Ghorpade Peth (duplicate)
   27: { lat: 18.508, lng: 73.845 }, // Navi Peth
   28: { lat: 18.495, lng: 73.835 }, // Janta Vasahat
-  29: { lat: 18.515, lng: 73.842 }, // Deccan
-  30: { lat: 18.492, lng: 73.818 }, // Karvenagar
-  31: { lat: 18.505, lng: 73.805 }, // Mayur Colony
+  29: { lat: 18.515, lng: 73.842 }, // Deccan (duplicate)
+  30: { lat: 18.495, lng: 73.835 }, // Janta Vasahat (duplicate)
+  31: { lat: 18.492, lng: 73.818 }, // Karvenagar
   32: { lat: 18.485, lng: 73.805 }, // Warje
-  33: { lat: 18.465, lng: 73.795 }, // Shivane
-  34: { lat: 18.455, lng: 73.815 }, // Vadgaon Budhruk
-  35: { lat: 18.475, lng: 73.825 }, // Suncity
-  36: { lat: 18.485, lng: 73.845 }, // Sahakarnagar
-  37: { lat: 18.465, lng: 73.855 }, // Dhankawadi
-  38: { lat: 18.452, lng: 73.845 }, // Katraj
-  39: { lat: 18.472, lng: 73.865 }, // Indiranagar
-  40: { lat: 18.455, lng: 73.895 }, // Kondhwa Budhruk
-  41: { lat: 18.465, lng: 73.915 }, // Mohammadwadi
+  33: { lat: 18.455, lng: 73.815 }, // Vadgaon Dhayari
+  34: { lat: 18.495, lng: 73.835 }, // Vadgaon Budruk
+  35: { lat: 18.485, lng: 73.845 }, // Sahakar Nagar
+  36: { lat: 18.472, lng: 73.858 }, // Marketyard
+  37: { lat: 18.472, lng: 73.865 }, // Upper Super
+  38: { lat: 18.465, lng: 73.855 }, // Balajinagar
+  39: { lat: 18.465, lng: 73.855 }, // Dhankavadi
+  40: { lat: 18.452, lng: 73.845 }, // Ambegaon
+  41: { lat: 18.455, lng: 73.895 }, // Kondhwa Budruk
+  42: { lat: 18.465, lng: 73.915 }, // Phursungi
 };
 
-for (let i = 1; i <= 41; i++) {
+for (let i = 1; i <= 42; i++) {
   const ward = WARD_DATA.find(w => w.id === i);
   if (ward) {
     const coords = WARD_COORDINATES[i] || { 
@@ -482,3 +434,4 @@ export const ISSUE_CATEGORIES = [
   { id: 'stray', label: 'Stray animals', icon: '🐕' },
   { id: 'other', label: 'Other', icon: '⚠️' }
 ];
+</toolcall_result>
