@@ -5,417 +5,417 @@ export const WARD_DATA = [
     id: 1,
     name: "Kalas-Dhanori",
     corporators: [
-      { name: "ASHWINI BHANDARE", party: "BJP", phone: TEST_PHONE, _real: "9890881177" },
-      { name: "SANGEETA DANGAT", party: "BJP", phone: TEST_PHONE, _real: "9763636463" },
-      { name: "REKHA TINGRE", party: "NCP", phone: TEST_PHONE, _real: "9422013133" },
-      { name: "ANIL TINGRE", party: "BJP", phone: TEST_PHONE, _real: "9011777777" }
+      { name: "ASHWINI BHANDARE", party: "BJP", phone: TEST_PHONE },
+      { name: "SANGEETA DANGAT", party: "BJP", phone: TEST_PHONE },
+      { name: "REKHA TINGRE", party: "NCP", phone: TEST_PHONE },
+      { name: "ANIL TINGRE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 2,
     name: "Phule Nagar-Nagpur Chawl",
     corporators: [
-      { name: "NANDINI DHENDE", party: "NCP", phone: TEST_PHONE, _real: "9422030442" },
-      { name: "RAVI TINGRE", party: "NCP", phone: TEST_PHONE, _real: "7028134786" },
-      { name: "SHEETAL SAWANT", party: "NCP", phone: TEST_PHONE, _real: "9850841303" },
-      { name: "SUHAS TINGRE", party: "NCP", phone: TEST_PHONE, _real: "9155777777" }
+      { name: "NANDINI DHENDE", party: "NCP", phone: TEST_PHONE },
+      { name: "RAVI TINGRE", party: "NCP", phone: TEST_PHONE },
+      { name: "SHEETAL SAWANT", party: "NCP", phone: TEST_PHONE },
+      { name: "SUHAS TINGRE", party: "NCP", phone: TEST_PHONE }
     ]
   },
   {
     id: 3,
     name: "Viman Nagar-Somnath Nagar",
     corporators: [
-      { name: "PRITAM KHANDVE", party: "BJP", phone: TEST_PHONE, _real: "9763073444" },
-      { name: "ANIL SATAV", party: "BJP", phone: TEST_PHONE, _real: "9922921222" },
-      { name: "AISHWARYA PATHARE", party: "BJP", phone: TEST_PHONE, _real: "9823802598" },
-      { name: "RAMDAS DABHADE", party: "BJP", phone: TEST_PHONE, _real: "9100000000" }
+      { name: "PRITAM KHANDVE", party: "BJP", phone: TEST_PHONE },
+      { name: "ANIL SATAV", party: "BJP", phone: TEST_PHONE },
+      { name: "AISHWARYA PATHARE", party: "BJP", phone: TEST_PHONE },
+      { name: "RAMDAS DABHADE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 4,
     name: "Kharadi-Chandanagar",
     corporators: [
-      { name: "SHAILAJA BANSODE", party: "BJP", phone: TEST_PHONE, _real: "7387821361" },
-      { name: "RATNAMALA SATAV", party: "BJP", phone: TEST_PHONE, _real: "9850412819" },
-      { name: "TRUPTI BHARNE", party: "BJP", phone: TEST_PHONE, _real: "9822006300" },
-      { name: "SURENDRA PATHARE", party: "BJP", phone: TEST_PHONE, _real: "9850550777" }
+      { name: "SHAILAJA BANSODE", party: "BJP", phone: TEST_PHONE },
+      { name: "RATNAMALA SATAV", party: "BJP", phone: TEST_PHONE },
+      { name: "TRUPTI BHARNE", party: "BJP", phone: TEST_PHONE },
+      { name: "SURENDRA PATHARE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 5,
     name: "Vadagaon Sheri",
     corporators: [
-      { name: "NARAYAN GALANDE", party: "BJP", phone: TEST_PHONE, _real: "9922655894" },
-      { name: "SHWETA GALANDE", party: "BJP", phone: TEST_PHONE, _real: "9689935812" },
-      { name: "KAVITA GALANDE", party: "BJP", phone: TEST_PHONE, _real: "9890455555" },
-      { name: "YOGESH MULIK", party: "BJP", phone: TEST_PHONE, _real: "9175055555" }
+      { name: "NARAYAN GALANDE", party: "BJP", phone: TEST_PHONE },
+      { name: "SHWETA GALANDE", party: "BJP", phone: TEST_PHONE },
+      { name: "KAVITA GALANDE", party: "BJP", phone: TEST_PHONE },
+      { name: "YOGESH MULIK", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 6,
     name: "Yerawada",
     corporators: [
-      { name: "AVINASH SALVE", party: "Congress", phone: TEST_PHONE, _real: "989020078" },
-      { name: "SAIRA SHAIKH", party: "Congress", phone: TEST_PHONE, _real: "9371010449" },
-      { name: "ASHWINI LANDGE", party: "Congress", phone: TEST_PHONE, _real: "8888711915" },
-      { name: "VISHAL MALKE", party: "Congress", phone: TEST_PHONE, _real: "9021680623" }
+      { name: "AVINASH SALVE", party: "Congress", phone: TEST_PHONE },
+      { name: "SAIRA SHAIKH", party: "Congress", phone: TEST_PHONE },
+      { name: "ASHWINI LANDGE", party: "Congress", phone: TEST_PHONE },
+      { name: "VISHAL MALKE", party: "Congress", phone: TEST_PHONE }
     ]
   },
   {
     id: 7,
     name: "Pune University-Wakadewadi",
     corporators: [
-      { name: "NISHA MANWATKAR", party: "BJP", phone: TEST_PHONE, _real: "9860518804" },
-      { name: "ANJALI ORSE", party: "NCP", phone: TEST_PHONE, _real: "8975385787" },
-      { name: "NILESH NIKAM", party: "NCP", phone: TEST_PHONE, _real: "9890088080" },
-      { name: "DATTA BAHIRAT", party: "NCP", phone: TEST_PHONE, _real: "9922611000" }
+      { name: "NISHA MANWATKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "ANJALI ORSE", party: "NCP", phone: TEST_PHONE },
+      { name: "NILESH NIKAM", party: "NCP", phone: TEST_PHONE },
+      { name: "DATTA BAHIRAT", party: "NCP", phone: TEST_PHONE }
     ]
   },
   {
     id: 8,
     name: "Aundh-Bopodi",
     corporators: [
-      { name: "PARSHURAM WADEKAR", party: "BJP", phone: TEST_PHONE, _real: "9881319158" },
-      { name: "BHAKTI GAIKWAD", party: "BJP", phone: TEST_PHONE, _real: "9422001202" },
-      { name: "SAPNA CHHAJED", party: "BJP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "SUNNY NIMHAN", party: "BJP", phone: TEST_PHONE, _real: "9100000000" }
+      { name: "PARSHURAM WADEKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "BHAKTI GAIKWAD", party: "BJP", phone: TEST_PHONE },
+      { name: "SAPNA CHHAJED", party: "BJP", phone: TEST_PHONE },
+      { name: "SUNNY NIMHAN", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 9,
     name: "Baner-Balevadi-Pashan",
     corporators: [
-      { name: "ROHINI CHIMTE", party: "BJP", phone: TEST_PHONE, _real: "9850998577" },
-      { name: "BABURAO CHANDERE", party: "NCP", phone: TEST_PHONE, _real: "96004112424" },
-      { name: "MAYURI KOKATE", party: "BJP", phone: TEST_PHONE, _real: "8888000009" },
-      { name: "AMOL BALWADKAR", party: "NCP", phone: TEST_PHONE, _real: "9922511010" }
+      { name: "ROHINI CHIMTE", party: "BJP", phone: TEST_PHONE },
+      { name: "BABURAO CHANDERE", party: "NCP", phone: TEST_PHONE },
+      { name: "MAYURI KOKATE", party: "BJP", phone: TEST_PHONE },
+      { name: "AMOL BALWADKAR", party: "NCP", phone: TEST_PHONE }
     ]
   },
   {
     id: 10,
     name: "Bavdhan-Kothrud",
     corporators: [
-      { name: "KIRAN DAGADE PATIL", party: "BJP", phone: TEST_PHONE, _real: "9890302081" },
-      { name: "RUPALI PAWAR", party: "BJP", phone: TEST_PHONE, _real: "9922715850" },
-      { name: "ALPANA VARPE", party: "BJP", phone: TEST_PHONE, _real: "9850548885" },
-      { name: "DILIP VEDEPATIL", party: "BJP", phone: TEST_PHONE, _real: "9822096633" }
+      { name: "KIRAN DAGADE PATIL", party: "BJP", phone: TEST_PHONE },
+      { name: "RUPALI PAWAR", party: "BJP", phone: TEST_PHONE },
+      { name: "ALPANA VARPE", party: "BJP", phone: TEST_PHONE },
+      { name: "DILIP VEDEPATIL", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 11,
     name: "Rambaug Colony-Shivtirtha Nagar",
     corporators: [
-      { name: "HARSHWARDHAN MANKAR", party: "NCP", phone: TEST_PHONE, _real: "9527272727" },
-      { name: "DEEPALI DHOK", party: "Congress", phone: TEST_PHONE, _real: "9823478488" },
-      { name: "MANISHA BUTALA", party: "BJP", phone: TEST_PHONE, _real: "8007966017" },
-      { name: "RAMCHANDRA KADAM", party: "Congress", phone: TEST_PHONE, _real: "9822455555" }
+      { name: "HARSHWARDHAN MANKAR", party: "NCP", phone: TEST_PHONE },
+      { name: "DEEPALI DHOK", party: "Congress", phone: TEST_PHONE },
+      { name: "MANISHA BUTALA", party: "BJP", phone: TEST_PHONE },
+      { name: "RAMCHANDRA KADAM", party: "Congress", phone: TEST_PHONE }
     ]
   },
   {
     id: 12,
     name: "Mayur Colony-Dahanuka Colony",
     corporators: [
-      { name: "AMRUTA MHATRE", party: "BJP", phone: TEST_PHONE, _real: "9762162239" },
-      { name: "APURVA KHADE", party: "BJP", phone: TEST_PHONE, _real: "8308197179" },
-      { name: "POOJA JAGADE", party: "BJP", phone: TEST_PHONE, _real: "8888349498" },
-      { name: "NIVEDITA EKBOTE", party: "BJP", phone: TEST_PHONE, _real: "9890070005" }
+      { name: "AMRUTA MHATRE", party: "BJP", phone: TEST_PHONE },
+      { name: "APURVA KHADE", party: "BJP", phone: TEST_PHONE },
+      { name: "POOJA JAGADE", party: "BJP", phone: TEST_PHONE },
+      { name: "NIVEDITA EKBOTE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 13,
     name: "Erandwana-Happy Colony",
     corporators: [
-      { name: "NILESH ALHAT", party: "BJP", phone: TEST_PHONE, _real: "9503990009" },
-      { name: "SUMAIYA NADAF", party: "Congress", phone: TEST_PHONE, _real: "9422338800" },
-      { name: "VAISHALI BHALERAO", party: "Congress", phone: TEST_PHONE, _real: "9890405999" },
-      { name: "ARVIND SHINDE", party: "Congress", phone: TEST_PHONE, _real: "9881127183" }
+      { name: "NILESH ALHAT", party: "BJP", phone: TEST_PHONE },
+      { name: "SUMAIYA NADAF", party: "Congress", phone: TEST_PHONE },
+      { name: "VAISHALI BHALERAO", party: "Congress", phone: TEST_PHONE },
+      { name: "ARVIND SHINDE", party: "Congress", phone: TEST_PHONE }
     ]
   },
   {
     id: 14,
     name: "Deccan Gymkhana-Model Colony",
     corporators: [
-      { name: "HIMALI KAMBLE", party: "BJP", phone: TEST_PHONE, _real: "9850426458" },
-      { name: "KISHOR DHAYARKAR", party: "BJP", phone: TEST_PHONE, _real: "9689940467" },
-      { name: "SUREKHA KAWADE", party: "NCP", phone: TEST_PHONE, _real: "9922007310" },
-      { name: "UMESH GAIKWAD", party: "BJP", phone: TEST_PHONE, _real: "9890023600" }
+      { name: "HIMALI KAMBLE", party: "BJP", phone: TEST_PHONE },
+      { name: "KISHOR DHAYARKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "SUREKHA KAWADE", party: "NCP", phone: TEST_PHONE },
+      { name: "UMESH GAIKWAD", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 15,
     name: "Shaniwar Peth",
     corporators: [
-      { name: "NANDA ABNAVE", party: "BJP", phone: TEST_PHONE, _real: "9822109810" },
-      { name: "DADA KODRE", party: "BJP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "SARIKA GHULE", party: "BJP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "AJIT GHULE", party: "BJP", phone: TEST_PHONE, _real: "9822109810" }
+      { name: "NANDA ABNAVE", party: "BJP", phone: TEST_PHONE },
+      { name: "DADA KODRE", party: "BJP", phone: TEST_PHONE },
+      { name: "SARIKA GHULE", party: "BJP", phone: TEST_PHONE },
+      { name: "AJIT GHULE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 16,
     name: "Kasba Peth-Somwar Peth",
     corporators: [
-      { name: "VAISHALI BANKAR", party: "NCP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "UJWALA JANGALE", party: "BJP", phone: TEST_PHONE, _real: "8605883800" },
-      { name: "NITIN GAVVADE", party: "Shiv Sena-UBT", phone: TEST_PHONE, _real: "9822531681" },
-      { name: "DILIP TUPE", party: "BJP", phone: TEST_PHONE, _real: "9822863862" }
+      { name: "VAISHALI BANKAR", party: "NCP", phone: TEST_PHONE },
+      { name: "UJWALA JANGALE", party: "BJP", phone: TEST_PHONE },
+      { name: "NITIN GAVVADE", party: "Shiv Sena-UBT", phone: TEST_PHONE },
+      { name: "DILIP TUPE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 17,
     name: "Rasta Peth-Raviwar Peth",
     corporators: [
-      { name: "KHANDU LONDHE", party: "BJP", phone: TEST_PHONE, _real: "8657867070" },
-      { name: "HEMLATA MAGAR", party: "NCP", phone: TEST_PHONE, _real: "8888881818" },
-      { name: "PAYAL TUPE", party: "BJP", phone: TEST_PHONE, _real: "9975249994" },
-      { name: "PRASHANT TUPE", party: "BJP", phone: TEST_PHONE, _real: "9923585151" }
+      { name: "KHANDU LONDHE", party: "BJP", phone: TEST_PHONE },
+      { name: "HEMLATA MAGAR", party: "NCP", phone: TEST_PHONE },
+      { name: "PAYAL TUPE", party: "BJP", phone: TEST_PHONE },
+      { name: "PRASHANT TUPE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 18,
     name: "Khadakmal Aali-Mahatma Phule Peth",
     corporators: [
-      { name: "SAHIL KEDARI", party: "Congress", phone: TEST_PHONE, _real: "9422323968" },
-      { name: "KALINDA PUNDE", party: "BJP", phone: TEST_PHONE, _real: "9923384031" },
-      { name: "KOMAL SHENDKAR", party: "BJP", phone: TEST_PHONE, _real: "8957575757" },
-      { name: "PRASHANT JAGTAP", party: "Congress", phone: TEST_PHONE, _real: "9823024646" }
+      { name: "SAHIL KEDARI", party: "Congress", phone: TEST_PHONE },
+      { name: "KALINDA PUNDE", party: "BJP", phone: TEST_PHONE },
+      { name: "KOMAL SHENDKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "PRASHANT JAGTAP", party: "Congress", phone: TEST_PHONE }
     ]
   },
   {
     id: 19,
     name: "Lohiyanagar-Kasewadi",
     corporators: [
-      { name: "TASLEEM SHAIKH", party: "Congress", phone: TEST_PHONE, _real: "9822596232" },
-      { name: "ASIYA MANIYAR", party: "Congress", phone: TEST_PHONE, _real: "9422007275" },
-      { name: "KASHIF SAYYAD", party: "Congress", phone: TEST_PHONE, _real: "8446861777" },
-      { name: "GAFOOR PATHAN", party: "NCP-SP", phone: TEST_PHONE, _real: "9822596232" }
+      { name: "TASLEEM SHAIKH", party: "Congress", phone: TEST_PHONE },
+      { name: "ASIYA MANIYAR", party: "Congress", phone: TEST_PHONE },
+      { name: "KASHIF SAYYAD", party: "Congress", phone: TEST_PHONE },
+      { name: "GAFOOR PATHAN", party: "NCP-SP", phone: TEST_PHONE }
     ]
   },
   {
     id: 20,
     name: "Tadiwala Road-Sasoon Hospital",
     corporators: [
-      { name: "RAJENDRA SHILIMKAR", party: "BJP", phone: TEST_PHONE, _real: "9922133698" },
-      { name: "TANVI DIVEKAR", party: "BJP", phone: TEST_PHONE, _real: "9922953050" },
-      { name: "MANSI DESHPANDE", party: "BJP", phone: TEST_PHONE, _real: "9371145770" },
-      { name: "GAURAV GHULE", party: "NCP", phone: TEST_PHONE, _real: "9100000000" }
+      { name: "RAJENDRA SHILIMKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "TANVI DIVEKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "MANSI DESHPANDE", party: "BJP", phone: TEST_PHONE },
+      { name: "GAURAV GHULE", party: "NCP", phone: TEST_PHONE }
     ]
   },
   {
     id: 21,
     name: "Koregaon Park-Ghorpadi",
     corporators: [
-      { name: "PRASANNAJEET VAIRAGE", party: "BJP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "SIDDHI SHILIMKAR", party: "BJP", phone: TEST_PHONE, _real: "9623696635" },
-      { name: "MANISHA CHORBOLE", party: "BJP", phone: TEST_PHONE, _real: "9422013337" },
-      { name: "SHRINATH BHIMALE", party: "BJP", phone: TEST_PHONE, _real: "9850555555" }
+      { name: "PRASANNAJEET VAIRAGE", party: "BJP", phone: TEST_PHONE },
+      { name: "SIDDHI SHILIMKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "MANISHA CHORBOLE", party: "BJP", phone: TEST_PHONE },
+      { name: "SHRINATH BHIMALE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 22,
     name: "Mundhwa-Magarpatta City",
     corporators: [
-      { name: "MRUNAL KAMBLE", party: "BJP", phone: TEST_PHONE, _real: "9890055000" },
-      { name: "RAFIQ SHAIKH", party: "Congress", phone: TEST_PHONE, _real: "9823109003" },
-      { name: "ARCHANA PATIL", party: "BJP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "VIVEK YADAV", party: "BJP", phone: TEST_PHONE, _real: "9689932346" }
+      { name: "MRUNAL KAMBLE", party: "BJP", phone: TEST_PHONE },
+      { name: "RAFIQ SHAIKH", party: "Congress", phone: TEST_PHONE },
+      { name: "ARCHANA PATIL", party: "BJP", phone: TEST_PHONE },
+      { name: "VIVEK YADAV", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 23,
     name: "Hadapsar Gaothan-Satavwadi",
     corporators: [
-      { name: "PALLAVI JAWALE", party: "BJP", phone: TEST_PHONE, _real: "9922939677" },
-      { name: "SONALI ANDEKAR", party: "NCP", phone: TEST_PHONE, _real: "9689932350" },
-      { name: "LAXMI ANDEKAR", party: "NCP", phone: TEST_PHONE, _real: "9922732424" },
-      { name: "VISHAL DHANWADE", party: "BJP", phone: TEST_PHONE, _real: "9371002728" }
+      { name: "PALLAVI JAWALE", party: "BJP", phone: TEST_PHONE },
+      { name: "SONALI ANDEKAR", party: "NCP", phone: TEST_PHONE },
+      { name: "LAXMI ANDEKAR", party: "NCP", phone: TEST_PHONE },
+      { name: "VISHAL DHANWADE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 24,
     name: "Ramtekdi",
     corporators: [
-      { name: "KALPANA BAHIRAT", party: "BJP", phone: TEST_PHONE, _real: "9890591054" },
-      { name: "UJWALA YADAV", party: "BJP", phone: TEST_PHONE, _real: "7350277277" },
-      { name: "DEVENDRA VADKE", party: "BJP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "GANESH BIDKAR", party: "BJP", phone: TEST_PHONE, _real: "9100000000" }
+      { name: "KALPANA BAHIRAT", party: "BJP", phone: TEST_PHONE },
+      { name: "UJWALA YADAV", party: "BJP", phone: TEST_PHONE },
+      { name: "DEVENDRA VADKE", party: "BJP", phone: TEST_PHONE },
+      { name: "GANESH BIDKAR", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 25,
     name: "Wanwadi",
     corporators: [
-      { name: "GHOGARE DHANRAJ BABURAO", party: "Corporator", phone: TEST_PHONE, _real: "9850078997" },
-      { name: "KALINDA MURLIDHAR PUND", party: "Corporator", phone: TEST_PHONE, _real: "9850847948" },
-      { name: "JAGTAP RATNAPRABHA SUDAM", party: "Corporator", phone: TEST_PHONE, _real: "9921292929" },
-      { name: "JAGTAP PRASHANT SUDAM", party: "Corporator", phone: TEST_PHONE, _real: "9822651488" }
+      { name: "GHOGARE DHANRAJ BABURAO", party: "Corporator", phone: TEST_PHONE },
+      { name: "KALINDA MURLIDHAR PUND", party: "Corporator", phone: TEST_PHONE },
+      { name: "JAGTAP RATNAPRABHA SUDAM", party: "Corporator", phone: TEST_PHONE },
+      { name: "JAGTAP PRASHANT SUDAM", party: "Corporator", phone: TEST_PHONE }
     ]
   },
   {
     id: 26,
     name: "Mohammadwadi - Kausar Baug",
     corporators: [
-      { name: "ALHAT PRACHI ASHISH", party: "Corporator", phone: TEST_PHONE, _real: "9850709596" },
-      { name: "BHANGIRE PRAMOD ALIAS NANA VASANT", party: "Corporator", phone: TEST_PHONE, _real: "8888882882" },
-      { name: "LONKAR NANDA NARAYAN", party: "Corporator", phone: TEST_PHONE, _real: "9881224422" },
-      { name: "SANJAY (TATYA) GULAB GHULE", party: "Corporator", phone: TEST_PHONE, _real: "9850047872" }
+      { name: "ALHAT PRACHI ASHISH", party: "Corporator", phone: TEST_PHONE },
+      { name: "BHANGIRE PRAMOD ALIAS NANA VASANT", party: "Corporator", phone: TEST_PHONE },
+      { name: "LONKAR NANDA NARAYAN", party: "Corporator", phone: TEST_PHONE },
+      { name: "SANJAY (TATYA) GULAB GHULE", party: "Corporator", phone: TEST_PHONE }
     ]
   },
   {
     id: 27,
     name: "Kondhwa Khurd - Meetha Nagar",
     corporators: [
-      { name: "ADV. HAJI GAFUR PATHAN", party: "Corporator", phone: TEST_PHONE, _real: "8928392738" },
-      { name: "PARVEEN HAJI FIROZ", party: "Corporator", phone: TEST_PHONE, _real: "9823048246" },
-      { name: "HAMIDA ANIS SUNDAKE", party: "Corporator", phone: TEST_PHONE, _real: "9049222882" },
-      { name: "BABAR SAINATH SAMBHAJI", party: "Corporator", phone: TEST_PHONE, _real: "9850982198" }
+      { name: "ADV. HAJI GAFUR PATHAN", party: "Corporator", phone: TEST_PHONE },
+      { name: "PARVEEN HAJI FIROZ", party: "Corporator", phone: TEST_PHONE },
+      { name: "HAMIDA ANIS SUNDAKE", party: "Corporator", phone: TEST_PHONE },
+      { name: "BABAR SAINATH SAMBHAJI", party: "Corporator", phone: TEST_PHONE }
     ]
   },
   {
     id: 28,
     name: "Salisbury Park - Maharshi Nagar",
     corporators: [
-      { name: "KAVITA BHARAT VAIRAGE", party: "Corporator", phone: TEST_PHONE, _real: "9890797776" },
-      { name: "SHRINATH YASHWANT BHIMALE", party: "Corporator", phone: TEST_PHONE, _real: "9822291820" },
-      { name: "RAJASHRI AVINASH SHILIMKAR", party: "Corporator", phone: TEST_PHONE, _real: "9422000465" },
-      { name: "PRAVIN MANIKCHAND CHORBOLE", party: "Corporator", phone: TEST_PHONE, _real: "9822018661" }
+      { name: "KAVITA BHARAT VAIRAGE", party: "Corporator", phone: TEST_PHONE },
+      { name: "SHRINATH YASHWANT BHIMALE", party: "Corporator", phone: TEST_PHONE },
+      { name: "RAJASHRI AVINASH SHILIMKAR", party: "Corporator", phone: TEST_PHONE },
+      { name: "PRAVIN MANIKCHAND CHORBOLE", party: "Corporator", phone: TEST_PHONE }
     ]
   },
   {
     id: 29,
     name: "Navi Peth",
     corporators: [
-      { name: "SARSWATI SHENDGE", party: "Corporator", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "SMITA VASTE", party: "Corporator", phone: TEST_PHONE, _real: "8805435152" },
-      { name: "DHEERAJ RAMCHANDRA GHATE", party: "Corporator", phone: TEST_PHONE, _real: "9822871530" }
+      { name: "SARSWATI SHENDGE", party: "Corporator", phone: TEST_PHONE },
+      { name: "SMITA VASTE", party: "Corporator", phone: TEST_PHONE },
+      { name: "DHEERAJ RAMCHANDRA GHATE", party: "Corporator", phone: TEST_PHONE }
     ]
   },
   {
     id: 30,
     name: "Janata Vasahat-Dattawadi",
     corporators: [
-      { name: "ANAND RAMESH RITHE", party: "BJP", phone: TEST_PHONE, _real: "9822663636" },
-      { name: "PRIYA SHIVAJI GADADE", party: "NCP", phone: TEST_PHONE, _real: "9689935636" },
-      { name: "ANITA SANTOSH KADAM", party: "BJP", phone: TEST_PHONE, _real: "7744858251" },
-      { name: "SHANKAR GANPATI PAWAR", party: "BJP", phone: TEST_PHONE, _real: "9325565757" }
+      { name: "ANAND RAMESH RITHE", party: "BJP", phone: TEST_PHONE },
+      { name: "PRIYA SHIVAJI GADADE", party: "NCP", phone: TEST_PHONE },
+      { name: "ANITA SANTOSH KADAM", party: "BJP", phone: TEST_PHONE },
+      { name: "SHANKAR GANPATI PAWAR", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 31,
     name: "Karve Nagar",
     corporators: [
-      { name: "SUSHIL MENGDE", party: "BJP", phone: TEST_PHONE, _real: "9881007008" },
-      { name: "LAKSHMI DUDHANE", party: "BJP", phone: TEST_PHONE, _real: "9975343434" },
-      { name: "VRUSHALI CHAUDHARI", party: "BJP", phone: TEST_PHONE, _real: "9100000000" },
-      { name: "RAJABHAU BARATE", party: "BJP", phone: TEST_PHONE, _real: "9689934911" }
+      { name: "SUSHIL MENGDE", party: "BJP", phone: TEST_PHONE },
+      { name: "LAKSHMI DUDHANE", party: "BJP", phone: TEST_PHONE },
+      { name: "VRUSHALI CHAUDHARI", party: "BJP", phone: TEST_PHONE },
+      { name: "RAJABHAU BARATE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 32,
     name: "Warje Malwadi",
     corporators: [
-      { name: "DILIP BARATE", party: "NCP", phone: TEST_PHONE, _real: "9823022182" },
-      { name: "SAYALI WANJALE", party: "NCP", phone: TEST_PHONE, _real: "9673711626" },
-      { name: "DIPALI DHUMAL", party: "NCP", phone: TEST_PHONE, _real: "9850623184" },
-      { name: "SACHIN DODKE", party: "NCP", phone: TEST_PHONE, _real: "9822197273" }
+      { name: "DILIP BARATE", party: "NCP", phone: TEST_PHONE },
+      { name: "SAYALI WANJALE", party: "NCP", phone: TEST_PHONE },
+      { name: "DIPALI DHUMAL", party: "NCP", phone: TEST_PHONE },
+      { name: "SACHIN DODKE", party: "NCP", phone: TEST_PHONE }
     ]
   },
   {
     id: 33,
     name: "Vadgaon Dhayari-Suncity",
     corporators: [
-      { name: "HARIDAS CHARWAD", party: "BJP", phone: TEST_PHONE, _real: "7387680100" },
-      { name: "RAJASHREE NAVALE", party: "BJP", phone: TEST_PHONE, _real: "9923184111" },
-      { name: "NITA DANGAT", party: "BJP", phone: TEST_PHONE, _real: "7387680100" },
-      { name: "RAJU LAIGUDE", party: "BJP", phone: TEST_PHONE, _real: "8888827827" }
+      { name: "HARIDAS CHARWAD", party: "BJP", phone: TEST_PHONE },
+      { name: "RAJASHREE NAVALE", party: "BJP", phone: TEST_PHONE },
+      { name: "NITA DANGAT", party: "BJP", phone: TEST_PHONE },
+      { name: "RAJU LAIGUDE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 34,
     name: "Vadgaon Budruk-Hingane Khurd",
     corporators: [
-      { name: "PRASANNA JAGTAP", party: "NCP", phone: TEST_PHONE, _real: "9822022950" },
-      { name: "JYOTI GOSAWI", party: "BJP", phone: TEST_PHONE, _real: "9623276276" },
-      { name: "MANJUSHA NAGPURE", party: "BJP", phone: TEST_PHONE, _real: "8600406666" },
-      { name: "SHRIKANT JAGTAP", party: "BJP", phone: TEST_PHONE, _real: "9922433619" }
+      { name: "PRASANNA JAGTAP", party: "NCP", phone: TEST_PHONE },
+      { name: "JYOTI GOSAWI", party: "BJP", phone: TEST_PHONE },
+      { name: "MANJUSHA NAGPURE", party: "BJP", phone: TEST_PHONE },
+      { name: "SHRIKANT JAGTAP", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 35,
     name: "Sahakar Nagar-Padmavati",
     corporators: [
-      { name: "DISHA MANE", party: "BJP", phone: TEST_PHONE, _real: "9822656724" },
-      { name: "ULHAS BAGUL", party: "Congress", phone: TEST_PHONE, _real: "9822015478" },
-      { name: "ASHWINI KADAM", party: "BJP", phone: TEST_PHONE, _real: "9011902525" },
-      { name: "MAHESH WABLE", party: "BJP", phone: TEST_PHONE, _real: "9422089659" }
+      { name: "DISHA MANE", party: "BJP", phone: TEST_PHONE },
+      { name: "ULHAS BAGUL", party: "Congress", phone: TEST_PHONE },
+      { name: "ASHWINI KADAM", party: "BJP", phone: TEST_PHONE },
+      { name: "MAHESH WABLE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 36,
     name: "Marketyard-Lower Indira Nagar",
     corporators: [
-      { name: "ANUSAYA CHAVAN", party: "BJP", phone: TEST_PHONE, _real: "9623850896" },
-      { name: "RAJENDRA SHILIMKAR", party: "BJP", phone: TEST_PHONE, _real: "8087823737" },
-      { name: "MANSI DESHPANDE", party: "BJP", phone: TEST_PHONE, _real: "9689930952" },
-      { name: "SUNIL KAMBLE", party: "BJP", phone: TEST_PHONE, _real: "9657453726" }
+      { name: "ANUSAYA CHAVAN", party: "BJP", phone: TEST_PHONE },
+      { name: "RAJENDRA SHILIMKAR", party: "BJP", phone: TEST_PHONE },
+      { name: "MANSI DESHPANDE", party: "BJP", phone: TEST_PHONE },
+      { name: "SUNIL KAMBLE", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 37,
     name: "Upper Super Indira Nagar",
     corporators: [
-      { name: "VARSHA SATHE", party: "BJP", phone: TEST_PHONE, _real: "7875841933" },
-      { name: "RUPALI DHADVE", party: "BJP", phone: TEST_PHONE, _real: "9527594942" },
-      { name: "BALA OSWAL", party: "BJP", phone: TEST_PHONE, _real: "9422089978" },
-      { name: "PRAMOD OSWAL", party: "BJP", phone: TEST_PHONE, _real: "9100000000" }
+      { name: "VARSHA SATHE", party: "BJP", phone: TEST_PHONE },
+      { name: "RUPALI DHADVE", party: "BJP", phone: TEST_PHONE },
+      { name: "BALA OSWAL", party: "BJP", phone: TEST_PHONE },
+      { name: "PRAMOD OSWAL", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 38,
     name: "Balajinagar-Rajiv Gandhi Nagar",
     corporators: [
-      { name: "DATTATRAYA DHANKAWDE", party: "NCP", phone: TEST_PHONE, _real: "9422035378" },
-      { name: "RANI BHOSALE", party: "NCP", phone: TEST_PHONE, _real: "9922555561" },
-      { name: "MANISHATAI KADAM", party: "NCP", phone: TEST_PHONE, _real: "9422037997" },
-      { name: "PRAKASH KADAM", party: "NCP", phone: TEST_PHONE, _real: "9822089975" }
+      { name: "DATTATRAYA DHANKAWDE", party: "NCP", phone: TEST_PHONE },
+      { name: "RANI BHOSALE", party: "NCP", phone: TEST_PHONE },
+      { name: "MANISHATAI KADAM", party: "NCP", phone: TEST_PHONE },
+      { name: "PRAKASH KADAM", party: "NCP", phone: TEST_PHONE }
     ]
   },
   {
     id: 39,
     name: "Dhankavadi-Ambegaon",
     corporators: [
-      { name: "KISHOR DHANKAWDE", party: "NCP", phone: TEST_PHONE, _real: "9545405051" },
-      { name: "ASHWINI BHAGWAT", party: "NCP", phone: TEST_PHONE, _real: "9922041111" },
-      { name: "VARSHA TAPKIR", party: "BJP", phone: TEST_PHONE, _real: "9923109971" },
-      { name: "VISHAL TAMBE", party: "NCP", phone: TEST_PHONE, _real: "9822559796" }
+      { name: "KISHOR DHANKAWDE", party: "NCP", phone: TEST_PHONE },
+      { name: "ASHWINI BHAGWAT", party: "NCP", phone: TEST_PHONE },
+      { name: "VARSHA TAPKIR", party: "BJP", phone: TEST_PHONE },
+      { name: "VISHAL TAMBE", party: "NCP", phone: TEST_PHONE }
     ]
   },
   {
     id: 40,
     name: "Ambegaon Dattanagar-Katraj Gaothan",
     corporators: [
-      { name: "YUVRAJ BELDARE", party: "NCP", phone: TEST_PHONE, _real: "9922494444" },
-      { name: "AMRUTA BABAR", party: "NCP", phone: TEST_PHONE, _real: "9850387007" },
-      { name: "SMITA KONDHARE", party: "NCP", phone: TEST_PHONE, _real: "9822069603" },
-      { name: "VASANT MORE", party: "MNS", phone: TEST_PHONE, _real: "9822271859" }
+      { name: "YUVRAJ BELDARE", party: "NCP", phone: TEST_PHONE },
+      { name: "AMRUTA BABAR", party: "NCP", phone: TEST_PHONE },
+      { name: "SMITA KONDHARE", party: "NCP", phone: TEST_PHONE },
+      { name: "VASANT MORE", party: "MNS", phone: TEST_PHONE }
     ]
   },
   {
     id: 41,
     name: "Kondhwa Budruk-Yewalewadi",
     corporators: [
-      { name: "VIRSEN JAGTAP", party: "NCP", phone: TEST_PHONE, _real: "9922690747" },
-      { name: "SANGEETA THOSAR", party: "BJP", phone: TEST_PHONE, _real: "9822300207" },
-      { name: "VRUSHALI KAMTHE", party: "NCP", phone: TEST_PHONE, _real: "9657080709" },
-      { name: "RANJANA TILEKAR", party: "BJP", phone: TEST_PHONE, _real: "9850666321" }
+      { name: "VIRSEN JAGTAP", party: "NCP", phone: TEST_PHONE },
+      { name: "SANGEETA THOSAR", party: "BJP", phone: TEST_PHONE },
+      { name: "VRUSHALI KAMTHE", party: "NCP", phone: TEST_PHONE },
+      { name: "RANJANA TILEKAR", party: "BJP", phone: TEST_PHONE }
     ]
   },
   {
     id: 42,
     name: "Phursungi-Lohgaon",
     corporators: [
-      { name: "GANESH DHORE", party: "BJP", phone: TEST_PHONE, _real: "9881697520" },
-      { name: "ASHWINI POKALE", party: "BJP", phone: TEST_PHONE, _real: "9822272777" }
+      { name: "GANESH DHORE", party: "BJP", phone: TEST_PHONE },
+      { name: "ASHWINI POKALE", party: "BJP", phone: TEST_PHONE }
     ]
   }
 ];
