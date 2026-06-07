@@ -413,11 +413,59 @@ export const WARD_DATA = [
 ];
 
 // Add coordinates and complaints to wards
+const WARD_COORDINATES = {
+  1: { lat: 18.598, lng: 73.896 }, // Kalas-Dhanori
+  2: { lat: 18.555, lng: 73.892 }, // Phulenagar
+  3: { lat: 18.567, lng: 73.914 }, // Vimannagar
+  4: { lat: 18.552, lng: 73.941 }, // Kharadi
+  5: { lat: 18.544, lng: 73.911 }, // Vadgaonsheri
+  6: { lat: 18.552, lng: 73.882 }, // Yerawada
+  7: { lat: 18.536, lng: 73.834 }, // Gokhalenagar
+  8: { lat: 18.558, lng: 73.815 }, // Aundh
+  9: { lat: 18.559, lng: 73.792 }, // Baner
+  10: { lat: 18.508, lng: 73.782 }, // Bavdhan
+  11: { lat: 18.518, lng: 73.818 }, // Kothrud/Rambaug
+  12: { lat: 18.528, lng: 73.841 }, // Shivajinagar
+  13: { lat: 18.528, lng: 73.874 }, // Pune Station
+  14: { lat: 18.536, lng: 73.889 }, // Koregaon Park
+  15: { lat: 18.522, lng: 73.935 }, // Mundhwa/Magarpatta
+  16: { lat: 18.498, lng: 73.924 }, // Hadapsar
+  17: { lat: 18.495, lng: 73.905 }, // Ramtekdi
+  18: { lat: 18.485, lng: 73.895 }, // Wanowrie
+  19: { lat: 18.475, lng: 73.885 }, // Kondhwa Khurd
+  20: { lat: 18.472, lng: 73.858 }, // Bibewadi
+  21: { lat: 18.495, lng: 73.865 }, // Mukundnagar
+  22: { lat: 18.502, lng: 73.875 }, // Kashewadi
+  23: { lat: 18.515, lng: 73.865 }, // Nana Peth
+  24: { lat: 18.519, lng: 73.858 }, // Kasba Peth
+  25: { lat: 18.517, lng: 73.852 }, // Shaniwar Peth
+  26: { lat: 18.505, lng: 73.862 }, // Ghorpade Peth
+  27: { lat: 18.508, lng: 73.845 }, // Navi Peth
+  28: { lat: 18.495, lng: 73.835 }, // Janta Vasahat
+  29: { lat: 18.515, lng: 73.842 }, // Deccan
+  30: { lat: 18.492, lng: 73.818 }, // Karvenagar
+  31: { lat: 18.505, lng: 73.805 }, // Mayur Colony
+  32: { lat: 18.485, lng: 73.805 }, // Warje
+  33: { lat: 18.465, lng: 73.795 }, // Shivane
+  34: { lat: 18.455, lng: 73.815 }, // Vadgaon Budhruk
+  35: { lat: 18.475, lng: 73.825 }, // Suncity
+  36: { lat: 18.485, lng: 73.845 }, // Sahakarnagar
+  37: { lat: 18.465, lng: 73.855 }, // Dhankawadi
+  38: { lat: 18.452, lng: 73.845 }, // Katraj
+  39: { lat: 18.472, lng: 73.865 }, // Indiranagar
+  40: { lat: 18.455, lng: 73.895 }, // Kondhwa Budhruk
+  41: { lat: 18.465, lng: 73.915 }, // Mohammadwadi
+};
+
 for (let i = 1; i <= 41; i++) {
   const ward = WARD_DATA.find(w => w.id === i);
   if (ward) {
-    ward.lat = 18.45 + Math.random() * 0.15;
-    ward.lng = 73.75 + Math.random() * 0.2;
+    const coords = WARD_COORDINATES[i] || { 
+      lat: 18.45 + Math.random() * 0.15, 
+      lng: 73.75 + Math.random() * 0.2 
+    };
+    ward.lat = coords.lat;
+    ward.lng = coords.lng;
     ward.complaints = Math.floor(Math.random() * 50);
   }
 }
