@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Camera, MapPin, Phone, MessageSquare, CheckCircle2, Loader2, Upload } from 'lucide-react'
-import { WARD_DATA, ISSUE_CATEGORIES } from '../data/wards'
+import { Camera, MapPin, Phone, MessageSquare, CheckCircle2, Loader2, Upload, Mail } from 'lucide-react'
+import { WARD_DATA, ISSUE_CATEGORIES, getWardZone, EMAIL_TEMPLATES } from '../data/wards'
 import { saveComplaint } from '../utils/storage'
 import { cn } from '../utils/cn'
 
@@ -51,6 +51,18 @@ const ReportPage = () => {
   }
 
   if (submitted) {
+    const zone = getWardZone(ward?.id)
+    const emailSubject = zone 
+      ? `Zone ${zone.code} (${zone.name}) — Ward ${ward.id} — ${selectedCategory?.label}`
+      : `Ward ${ward?.id} — ${selectedCategory?.label}`
+    
+    const emailBody = `${EMAIL_TEMPLATES[selectedCategory?.id] || ''}\n\n` +
+      `Description: ${description || 'No additional details provided.'}\n` +
+      `Ward: ${ward?.id} (${ward?.name})\n` +
+      `Ticket Reference: ${ticketNumber}`
+
+    const mailtoUrl = `mailto:egov@pcmcindia.gov.in?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+
     return (
       <div className="flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
         <div className="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6 animate-bounce">
@@ -64,16 +76,25 @@ const ReportPage = () => {
           <p className="text-3xl font-mono font-bold text-primary">{ticketNumber}</p>
         </div>
 
-        <div className="flex flex-col gap-4 w-full max-sm">
+        <div className="flex flex-col gap-3 w-full max-w-sm">
           <a 
             href={`https://wa.me/${ward?.corporators[0]?.phone || '9100000000'}?text=Hello, I have reported a ${selectedCategory?.label} issue in ${ward?.name}. Reference: ${ticketNumber}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-8 rounded-xl"
+            className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-8 rounded-xl hover:opacity-90 transition-opacity"
           >
             <MessageSquare size={20} />
             Share with Nagarsevak
           </a>
+
+          <a 
+            href={mailtoUrl}
+            className="flex items-center justify-center gap-2 bg-secondary text-white font-bold py-4 px-8 rounded-xl hover:opacity-90 transition-opacity"
+          >
+            <Mail size={20} />
+            Email Central PCMC (Zone {zone?.code || 'N/A'})
+          </a>
+
           <button 
             onClick={() => navigate('/tracker')}
             className="text-secondary font-medium py-2 underline"
@@ -140,6 +161,11 @@ const ReportPage = () => {
                 Location Detected
               </div>
               <p className="text-secondary font-bold">Ward {ward.id} – {ward.name}</p>
+              {getWardZone(ward.id) && (
+                <p className="text-xs text-primary font-bold mt-1">
+                  Zone {getWardZone(ward.id).code} ({getWardZone(ward.id).name})
+                </p>
+              )}
               
               {/* Nagarsevak Card */}
               <div className="mt-4 bg-white rounded-lg p-3 shadow-sm border border-gray-100">
