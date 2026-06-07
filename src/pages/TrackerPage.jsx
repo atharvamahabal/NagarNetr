@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { getComplaints } from '../utils/storage'
 import { Clock, CheckCircle2, AlertCircle, ChevronRight, Filter } from 'lucide-react'
 import { cn } from '../utils/cn'
@@ -60,9 +61,9 @@ const TrackerPage = () => {
           </div>
           <h3 className="text-lg font-bold text-secondary mb-2">No complaints found</h3>
           <p className="text-gray-500 mb-6">You haven't filed any complaints yet.</p>
-          <a href="/report" className="inline-block bg-primary text-white font-bold py-3 px-8 rounded-xl">
+          <Link to="/report" className="inline-block bg-primary text-white font-bold py-3 px-8 rounded-xl">
             Report an Issue
-          </a>
+          </Link>
         </div>
       ) : (
         <div className="space-y-4">

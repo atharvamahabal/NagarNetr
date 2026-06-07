@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -72,9 +73,9 @@ const MapPage = () => {
                       <span className="text-[10px] text-gray-400">Open Complaints</span>
                       <span className="font-bold text-red-500">24</span>
                     </div>
-                    <a href="/report" className="bg-primary text-white text-[10px] font-bold px-3 py-1.5 rounded-lg">
+                    <Link to="/report" className="bg-primary text-white text-[10px] font-bold px-3 py-1.5 rounded-lg">
                       Report Here
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Popup>

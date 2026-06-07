@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Camera, MapPin, Phone, MessageSquare, CheckCircle2, Loader2, Upload } from 'lucide-react'
 import { WARD_DATA, ISSUE_CATEGORIES } from '../data/wards'
 import { saveComplaint } from '../utils/storage'
 import { cn } from '../utils/cn'
 
 const ReportPage = () => {
+  const navigate = useNavigate()
   const [photo, setPhoto] = useState(null)
   const [detecting, setDetecting] = useState(false)
   const [ward, setWard] = useState(null)
@@ -62,9 +64,9 @@ const ReportPage = () => {
           <p className="text-3xl font-mono font-bold text-primary">{ticketNumber}</p>
         </div>
 
-        <div className="flex flex-col gap-4 w-full max-w-sm">
+        <div className="flex flex-col gap-4 w-full max-sm">
           <a 
-            href={`https://wa.me/9100000000?text=Hello, I have reported a ${selectedCategory?.label} issue in ${ward?.name}. Reference: ${ticketNumber}`}
+            href={`https://wa.me/${ward?.corporators[0]?.phone || '9100000000'}?text=Hello, I have reported a ${selectedCategory?.label} issue in ${ward?.name}. Reference: ${ticketNumber}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-8 rounded-xl"
@@ -73,7 +75,7 @@ const ReportPage = () => {
             Share with Nagarsevak
           </a>
           <button 
-            onClick={() => window.location.href = '/tracker'}
+            onClick={() => navigate('/tracker')}
             className="text-secondary font-medium py-2 underline"
           >
             Track my complaints
