@@ -17,7 +17,7 @@ const ReportPage = () => {
   const [ticketNumber, setTicketNumber] = useState('')
 
   useEffect(() => {
-    if (ward && selectedCategory && !description) {
+    if (ward && selectedCategory) {
       const template = EMAIL_TEMPLATES[selectedCategory.id] || ''
       const nagarsevakName = ward.corporators[0]?.name || 'Nagarsevak'
       setDescription(template.replace('[NAME]', nagarsevakName))
@@ -104,7 +104,9 @@ const ReportPage = () => {
       : `Ward ${ward?.id} — ${selectedCategory?.label}`
     
     const baseMessage = description || (EMAIL_TEMPLATES[selectedCategory?.id]?.replace('[NAME]', nagarsevak?.name || 'Nagarsevak') || '')
-    const photoNote = photo ? "\n(Note: I have attached a photo of the issue for your reference.)" : ""
+    const photoNote = photo 
+      ? "\n\n🚨 IMPORTANT: Please MANUALLY ATTACH the captured photo from your gallery to this email for proof." 
+      : ""
     const nagarsevakRef = `\nThis road/area comes under Nagarsevak: ${nagarsevak?.name || 'Unknown'}`
     
     const fullMessage = `${baseMessage}${photoNote}${nagarsevakRef}\n\n` +
@@ -116,8 +118,8 @@ const ReportPage = () => {
       window.open(whatsappUrl, '_blank')
     } else if (method === 'email') {
       const recipient = selectedCategory?.id === 'pothole' ? 'road@punecorporation.org' : 'egov@pcmcindia.gov.in'
-      const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(fullMessage)}`
-      window.location.href = mailtoUrl
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(fullMessage)}`
+      window.open(gmailUrl, '_blank')
     }
 
     setSubmitted(true)

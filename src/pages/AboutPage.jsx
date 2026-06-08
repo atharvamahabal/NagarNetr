@@ -11,8 +11,8 @@ const AboutPage = () => {
     { level: 'Municipal Commissioner', icon: ShieldCheck },
     { level: 'Zonal Deputy Commissioner', icon: ShieldCheck },
     { level: 'Ward Officer', icon: ShieldCheck },
-    { level: 'Nagarsevak (Corporator)', icon: Info, active: true },
-    { level: 'Citizen', icon: History }
+    { level: 'Nagarsevak (Corporator)', icon: Info },
+    { level: 'Citizen', icon: History, active: true }
   ];
 
   return (

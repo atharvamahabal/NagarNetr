@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { getComplaints } from '../utils/storage'
-import { Clock, CheckCircle2, AlertCircle, ChevronRight, Filter } from 'lucide-react'
+import { getComplaints, updateComplaintStatus } from '../utils/storage'
+import { Clock, CheckCircle2, AlertCircle, ChevronRight, Filter, Trash2 } from 'lucide-react'
 import { cn } from '../utils/cn'
 
 const TrackerPage = () => {
@@ -11,6 +11,11 @@ const TrackerPage = () => {
   useEffect(() => {
     setComplaints(getComplaints())
   }, [])
+
+  const handleResolve = (id) => {
+    updateComplaintStatus(id, 'resolved')
+    setComplaints(getComplaints())
+  }
 
   const filteredComplaints = complaints.filter(c => {
     if (filter === 'all') return true
@@ -68,30 +73,41 @@ const TrackerPage = () => {
       ) : (
         <div className="space-y-4">
           {filteredComplaints.map((complaint) => (
-            <div key={complaint.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center gap-4 active:bg-gray-50 transition-colors">
-              <div className="w-14 h-14 bg-gray-50 rounded-xl flex items-center justify-center text-2xl">
-                {complaint.photo ? (
-                  <img src={complaint.photo} alt="" className="w-full h-full object-cover rounded-xl" />
-                ) : (
-                  '📍'
-                )}
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-[10px] font-mono text-gray-400 uppercase tracking-tighter">{complaint.id}</span>
-                  <span className="text-[10px] text-gray-400">{new Date(complaint.date).toLocaleDateString()}</span>
+            <div key={complaint.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex flex-col gap-4">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 bg-gray-50 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                  {complaint.photo ? (
+                    <img src={complaint.photo} alt="" className="w-full h-full object-cover rounded-xl" />
+                  ) : (
+                    '📍'
+                  )}
                 </div>
-                <h4 className="font-bold text-secondary truncate">{complaint.category}</h4>
-                <p className="text-xs text-gray-500 truncate">{complaint.wardName}</p>
-                <div className={cn(
-                  "mt-2 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold border",
-                  getStatusColor(complaint.status)
-                )}>
-                  {getStatusIcon(complaint.status)}
-                  {complaint.status.toUpperCase()}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-tighter">{complaint.id}</span>
+                    <span className="text-[10px] text-gray-400">{new Date(complaint.date).toLocaleDateString()}</span>
+                  </div>
+                  <h4 className="font-bold text-secondary truncate">{complaint.category}</h4>
+                  <p className="text-xs text-gray-500 truncate">{complaint.wardName}</p>
+                  <div className={cn(
+                    "mt-2 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold border",
+                    getStatusColor(complaint.status)
+                  )}>
+                    {getStatusIcon(complaint.status)}
+                    {complaint.status.toUpperCase()}
+                  </div>
                 </div>
               </div>
-              <ChevronRight className="text-gray-300" size={20} />
+              
+              {complaint.status !== 'resolved' && (
+                <button 
+                  onClick={() => handleResolve(complaint.id)}
+                  className="w-full py-2.5 bg-green-50 text-green-600 text-xs font-bold rounded-xl border border-green-100 hover:bg-green-100 transition-colors flex items-center justify-center gap-2"
+                >
+                  <CheckCircle2 size={14} />
+                  Mark as Resolved
+                </button>
+              )}
             </div>
           ))}
         </div>
