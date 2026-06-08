@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { WARD_DATA } from '../data/wards'
-import { Search, Phone, MessageSquare, Users } from 'lucide-react'
+import { Search } from 'lucide-react'
 
 const DirectoryPage = () => {
   const [searchQuery, setSearchQuery] = useState('')
@@ -40,9 +40,6 @@ const DirectoryPage = () => {
           <div key={idx} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex flex-col gap-4">
             <div className="flex justify-between items-start">
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-secondary">
-                  <Users size={24} />
-                </div>
                 <div>
                   <h3 className="font-bold text-secondary">{corp.name}</h3>
                   <p className="text-xs text-primary font-bold">{corp.party}</p>
@@ -52,23 +49,6 @@ const DirectoryPage = () => {
                 <p className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Ward {corp.wardId}</p>
                 <p className="text-[10px] text-gray-500 font-medium truncate max-w-[120px]">{corp.wardName}</p>
               </div>
-            </div>
-
-            <div className="flex gap-3 mt-2">
-              <a 
-                href={`tel:${corp.phone}`}
-                className="flex-1 flex items-center justify-center gap-2 bg-gray-50 text-secondary font-bold py-3 rounded-xl border border-gray-100 hover:bg-gray-100 transition-colors"
-              >
-                <Phone size={18} />
-                Call
-              </a>
-              <a 
-                href={`https://wa.me/${corp.phone}`}
-                className="flex-1 flex items-center justify-center gap-2 bg-green-50 text-[#25D366] font-bold py-3 rounded-xl border border-green-100 hover:bg-green-100 transition-colors"
-              >
-                <MessageSquare size={18} />
-                WhatsApp
-              </a>
             </div>
           </div>
         ))}
