@@ -33,13 +33,49 @@ const ReportPage = () => {
 
   const detectWard = () => {
     setDetecting(true)
-    // Simulating GPS detection
-    setTimeout(() => {
-      // For MVP, we'll pick a random ward or default to Ward 9
-      const detectedWard = WARD_DATA.find(w => w.id === 9) || WARD_DATA[0]
-      setWard(detectedWard)
+    
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser")
       setDetecting(false)
-    }, 2000)
+      return
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords
+        
+        // Find the closest ward based on distance
+        let closestWard = null
+        let minDistance = Infinity
+
+        WARD_DATA.forEach(w => {
+          const dist = Math.sqrt(
+            Math.pow(w.lat - latitude, 2) + Math.pow(w.lng - longitude, 2)
+          )
+          if (dist < minDistance) {
+            minDistance = dist
+            closestWard = w
+          }
+        })
+
+        // PMC approximate boundary check (roughly 15-20km radius from center)
+        // Bhukum is approx 18.51, 73.71, while PMC center is approx 18.52, 73.85
+        // A distance threshold of ~0.15 decimal degrees is roughly PMC limits
+        if (minDistance > 0.15) {
+          alert("You appear to be outside the PMC municipal limits. Please select your ward manually if you are reporting for a PMC area.")
+          setWard(null)
+        } else {
+          setWard(closestWard)
+        }
+        setDetecting(false)
+      },
+      (error) => {
+        console.error("Error detecting location:", error)
+        alert("Could not detect your location. Please select your ward manually.")
+        setDetecting(false)
+      },
+      { enableHighAccuracy: true }
+    )
   }
 
   const handleInitialSubmit = (e) => {
@@ -69,8 +105,9 @@ const ReportPage = () => {
     
     const baseMessage = description || (EMAIL_TEMPLATES[selectedCategory?.id]?.replace('[NAME]', nagarsevak?.name || 'Nagarsevak') || '')
     const photoNote = photo ? "\n(Note: I have attached a photo of the issue for your reference.)" : ""
+    const nagarsevakRef = `\nThis road/area comes under Nagarsevak: ${nagarsevak?.name || 'Unknown'}`
     
-    const fullMessage = `${baseMessage}${photoNote}\n\n` +
+    const fullMessage = `${baseMessage}${photoNote}${nagarsevakRef}\n\n` +
       `Location: Ward ${ward?.id} (${ward?.name})\n` +
       `Ticket Reference: ${saved.id}`
 
@@ -78,7 +115,8 @@ const ReportPage = () => {
       const whatsappUrl = `https://wa.me/${nagarsevak?.phone || '9100000000'}?text=${encodeURIComponent(fullMessage)}`
       window.open(whatsappUrl, '_blank')
     } else if (method === 'email') {
-      const mailtoUrl = `mailto:egov@pcmcindia.gov.in?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(fullMessage)}`
+      const recipient = selectedCategory?.id === 'pothole' ? 'road@punecorporation.org' : 'egov@pcmcindia.gov.in'
+      const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(fullMessage)}`
       window.location.href = mailtoUrl
     }
 
@@ -165,7 +203,7 @@ const ReportPage = () => {
             <label className="text-sm font-bold text-gray-500 uppercase tracking-wider">
               2. Confirm Location
             </label>
-            {!ward ? (
+            <div className="flex flex-col gap-3">
               <button 
                 type="button"
                 onClick={detectWard}
@@ -184,8 +222,29 @@ const ReportPage = () => {
                   </>
                 )}
               </button>
-            ) : (
-              <div className="space-y-4 animate-in fade-in slide-in-from-top-2 duration-300">
+              
+              <div className="relative">
+                <select
+                  onChange={(e) => {
+                    const selected = WARD_DATA.find(w => w.id === parseInt(e.target.value))
+                    setWard(selected)
+                  }}
+                  value={ward?.id || ""}
+                  className="w-full h-14 px-4 bg-white border-2 border-gray-100 rounded-xl font-bold text-secondary appearance-none focus:border-primary transition-all"
+                >
+                  <option value="" disabled>Or select ward manually...</option>
+                  {WARD_DATA.map(w => (
+                    <option key={w.id} value={w.id}>Ward {w.id}: {w.name}</option>
+                  ))}
+                </select>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                  ▼
+                </div>
+              </div>
+            </div>
+
+            {ward && (
+              <div className="space-y-4 animate-in fade-in slide-in-from-top-2 duration-300 mt-4">
                 <div className="bg-green-50 border border-green-200 rounded-xl p-4">
                   <div className="flex items-center gap-2 text-green-700 font-bold mb-1">
                     <CheckCircle2 size={18} />

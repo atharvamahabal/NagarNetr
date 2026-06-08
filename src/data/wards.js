@@ -523,6 +523,7 @@ export const EMAIL_TEMPLATES = {
   tree: "Respected [NAME] Sir/Madam, I would like to bring to your attention a tree maintenance/park issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
   illegal: "Respected [NAME] Sir/Madam, I would like to bring to your attention an illegal construction issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
   stray: "Respected [NAME] Sir/Madam, I would like to bring to your attention a stray animal issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated.",
-  other: "Respected [NAME] Sir/Madam, I would like to bring to your attention a civic issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated."
+  other: "Respected [NAME] Sir\/Madam, I would like to bring to your attention a civic issue in our area. It is causing daily inconvenience to residents. Kindly look into this at the earliest. Your prompt action will be highly appreciated."
 };
-</toolcall_result>
+
+export default WARD_DATA;
