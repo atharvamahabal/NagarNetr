@@ -1,4 +1,4 @@
-const TEST_PHONE = "917776058769";
+const TEST_PHONE = "919689900002";
 
 export const WARD_DATA = [
   {

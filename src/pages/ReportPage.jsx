@@ -114,11 +114,12 @@ const ReportPage = () => {
       `Ticket Reference: ${saved.id}`
 
     if (method === 'whatsapp') {
-      const whatsappUrl = `https://wa.me/${nagarsevak?.phone || '9100000000'}?text=${encodeURIComponent(fullMessage)}`
+      const whatsappUrl = `https://wa.me/${nagarsevak?.phone || '919689900002'}?text=${encodeURIComponent(fullMessage)}`
       window.open(whatsappUrl, '_blank')
     } else if (method === 'email') {
       const recipient = selectedCategory?.id === 'pothole' ? 'road@punecorporation.org' : 'egov@pcmcindia.gov.in'
-      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(fullMessage)}`
+      const ccRecipient = 'feedback@punecorporation.org'
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&cc=${ccRecipient}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(fullMessage)}`
       window.open(gmailUrl, '_blank')
     }
 
